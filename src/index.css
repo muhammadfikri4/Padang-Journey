@@ -2,6 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+    font-family: 'Metropolis';
+    src: url('../src//assets//Font/Metropolis-Regular.otf');
+}
+@font-face {
+    font-family: 'MetropolisBold';
+    src: url('../src//assets//Font/Metropolis-Bold.otf');
+}
+
 :root {
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }

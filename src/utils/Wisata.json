@@ -1,0 +1,48 @@
+[
+    {
+        "id": 100,
+        "nama": "Pantai Nirwana",
+        "deskripsi": "Pantai Nirwana berada tak jauh dari pelabuhan Teluk Bayur. Dari Pantai Nirwana pengunjung dapat melihat kapal-kapal yang sedang bersandar di pelabuhan Teluk Bayur. Saat air surut, batu karang dan koral kecil yang bertebaran bisa terlihat di sepanjang pantai. Pepohonan kelapa di pinggir pantai ini juga makin memberi nuansa tropis yang eksotis.",
+        "latarBelakang": "Pantai Nirwana juga memiliki keunikan sejarah dan legenda yang menarik. Salah satu cerita yang terkenal adalah legenda Malin Kundang, yang mengisahkan kisah seorang anak yang menjadi batu setelah mengingkari ibunya. Batu Malin Kundang yang legendaris dapat ditemukan di pantai ini, menambah daya tarik dan nilai sejarahnya.",
+        "kecamatan": "Bungus Teluk Kabung",
+        "kota": "Kota Padang",
+        "provinsi": "Sumatra Barat",
+        "imageUrl": "https://firebasestorage.googleapis.com/v0/b/pariwisata-d318c.appspot.com/o/pantai.jpg?alt=media&token=abb9f1b3-8c56-4807-a94a-f34aadc9d88a",
+        "locationUrl": "https://maps.app.goo.gl/dhzW1irTh7FKaEJD8",
+        "otherImage": ["https://firebasestorage.googleapis.com/v0/b/pariwisata-d318c.appspot.com/o/PantaiNirwana2.jpg?alt=media&token=51115858-b3fe-4ff3-9325-f286932e11de", "https://firebasestorage.googleapis.com/v0/b/pariwisata-d318c.appspot.com/o/PantaiNirwana3.jpg?alt=media&token=cdf71555-9295-4b78-afe2-214be423e632", "https://firebasestorage.googleapis.com/v0/b/pariwisata-d318c.appspot.com/o/PantaiNirwana4.png?alt=media&token=90afca47-1a38-4226-8d5d-07bd0b79539f"]
+    },
+    {
+        "id": 101,
+        "nama": "Masjid Raya Sumatra Barat",
+        "deskripsi": "Masjid Raya Sumatera Barat atau juga dikenal sebagai Masjid Mahligai Minang adalah salah satu masjid terbesar di Indonesia yang terletak di Kecamatan Padang Utara, Kota Padang, Provinsi Sumatera Barat. Masjid yang pembangunannya masih dalam tahap pengerjaan ini merupakan masjid terbesar di Sumatera Barat.",
+        "kecamatan": "Padang Utara",
+        "kota": "Kota Padang",
+        "provinsi": "Sumatra Barat",
+        "imageUrl": "https://firebasestorage.googleapis.com/v0/b/pariwisata-d318c.appspot.com/o/MasjidRayaPadang.jpg?alt=media&token=073f9b94-2f4b-4e4b-b6a6-e399ab42dbd3",
+        "locationUrl": "https://maps.app.goo.gl/CvEBC39H6G4gKjVR9"
+    },
+    {
+        "id": 102,
+        "nama": "Museum Adityawarman",
+        "deskripsi": "Museum Adityawarman merupakan museum budaya untuk melestarikan benda-benda bersejarah, seperti cagar budaya Minangkabau dan cagar budaya nasional. Museum yang berjulukan Taman Mini ala Sumatera Barat merupakan cara singkat untuk melihat budaya Sumatera Barat. Museum Adityawarman berlokasi di Jalan Diponegoro No. 10 Padang, diresmikan 16 Maret 1977 oleh Mendikbud Prof. DR. Syarif Thayeb. Berdasarkan SK Mendikbud RI No. 01/1989 tanggal 9 Januari 1989, Museum ini diberi nama Adityawarman. Hal tersebut untuk mengingat jasa seorang raja Minangkabau di abad XIV Masehi.",
+        "latarBelakang": "Lokasi Museum Adityawarman berada di kompleks Tugu Jalan Diponegoro No 10, Padang Sumatera Barat. Dulunya, lokasi ini dikenal dengan Taman Melati, sebuah taman bermain masyarakat Kota Padang. Pada masa penjajahan Belanda, di lokasi ini berdiri Tugu Micheils. Menurut cerita pada masa penjajahan Jepang, tugu tersebut diruntuhkan dan besi-besinya dibawa ke Jepang. Nama Adityawarman yang merupakan nama yang melekat pada nama Museum Adityawarman merupakan salah seorang raja Martapura pada abad ke 14. Dimana keberadaan kerjaan ini satu zaman dengan Kerajaan Majapahit.",
+        "kecamatan": "Padang Barat",
+        "kota": "Kota Padang",
+        "provinsi": "Sumatra Barat",
+        "imageUrl": "https://firebasestorage.googleapis.com/v0/b/pariwisata-d318c.appspot.com/o/MuseumAdityawarman.jpg?alt=media&token=07128ec5-3cd6-4a2d-b0fa-2189a1a9d949",
+        "locationUrl": "https://maps.app.goo.gl/Ae4bb9jWNUkN6GFHA",
+        "otherImage": ["https://firebasestorage.googleapis.com/v0/b/pariwisata-d318c.appspot.com/o/MuseumAdityawarman2.jpg?alt=media&token=ae9517b0-19ac-4b49-baf2-cb176c1dcaa5", "https://firebasestorage.googleapis.com/v0/b/pariwisata-d318c.appspot.com/o/MuseumAdityawarman3.jpg?alt=media&token=6fbd4f5c-1d2a-465d-837a-107ad291c867", "https://firebasestorage.googleapis.com/v0/b/pariwisata-d318c.appspot.com/o/MuseumAdityawarman4.jpg?alt=media&token=207fe58c-903d-4dde-bcaf-9269e9a320be"]
+    },
+    {
+        "id": 103,
+        "nama": "Gunung Padang",
+        "deskripsi": "Situs Gunung Padang merupakan situs prasejarah peninggalan kebudayaan megalitikum. Situs Gunung Padang bukanlah gunung aktif, tetapi lebih tepat dikatakan sebuah bukit dengan ketinggian sekitar 885 mdpl, luas kompleks utamanya sekitar 900 m², dan luas areal sekitar 3 ha. Situs Gunung Padang tercatat sebagai kompleks punden berundak terbesar di Asia Tenggara, bentuk bangunan punden berundaknya mencerminkan zaman megalitikum yang terdiri atas lima teras dan tersusun dengan ukuran yang berbeda-beda.",
+        "latarBelakang": "Keberadaan Situs Gunung Padang dilaporkan pertama kali oleh Nicolaas Johannes Krom dalam tulisannya yang berjudul Rapporten Oudheidkundige Dienst (Buletin Dinas Kepurbakalaan) pada tahun 1914. Kemudian, Krom melaporkan bahwa di puncak Situs Gunung Padang terdapat empat teras yang tersusun dari batu kasar serta dihiasi batu andesit dan di setiap teras terdapat gundukan tanah yang ditimbuni batu.",
+        "kecamatan": "Padang Barat",
+        "kota": "Kota Padang",
+        "provinsi": "Sumatra Barat",
+        "imageUrl": "https://firebasestorage.googleapis.com/v0/b/pariwisata-d318c.appspot.com/o/SitusGunungPadang.webp?alt=media&token=7c8fc7ff-9de4-4e33-9307-dca64ec8d214",
+        "locationUrl": "https://maps.app.goo.gl/Ae4bb9jWNUkN6GFHA",
+        "otherImage": ["https://firebasestorage.googleapis.com/v0/b/pariwisata-d318c.appspot.com/o/SitusGunungPadang2.jpeg?alt=media&token=303ad536-d7c7-4663-afd1-731e0103a91f", "https://firebasestorage.googleapis.com/v0/b/pariwisata-d318c.appspot.com/o/SitusGunungPadang3.jpg?alt=media&token=bcf99007-d8b3-42a8-bb4b-4b59d04e2203", "https://firebasestorage.googleapis.com/v0/b/pariwisata-d318c.appspot.com/o/SitusGunungPadang4.jpg?alt=media&token=cb609c7f-429c-40c2-bccf-0dfbe30041ab"]
+    }
+]
