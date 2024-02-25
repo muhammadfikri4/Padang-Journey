@@ -1,8 +1,15 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
+import { RiMenu4Line } from "react-icons/ri";
+import { IoClose } from "react-icons/io5";
 
 const Navbar = () => {
   const [isScroll, setIsScroll] = useState(false);
+  const [active, setActive] = useState(false);
+  const [bg, setBg] = useState("transparent");
+  const location = useLocation();
+
+  const param = new URLSearchParams(location.search).get("search");
 
   const listenScrollEvent = (event) => {
     if (window.scrollY < 530) {
@@ -20,10 +27,13 @@ const Navbar = () => {
   return (
     <nav
       className={`fixed flex items-center justify-between top-0 right-0 left-0 py-7 px-7 z-10 ${
-        isScroll
-          ? "bg-white shadow-[0_2px_10px_0_rgba(0,0,0,0.75)]"
-          : "bg-transparent shadow-none"
+        isScroll || active
+          ? "shadow-[0_2px_10px_0_rgba(0,0,0,0.75)]"
+          : `shadow-none`
       } `}
+      style={{
+        backgroundColor: isScroll || active ? "white" : `transparent`,
+      }}
     >
       {/* <div className="flex justify-between items-center">
         
@@ -31,14 +41,14 @@ const Navbar = () => {
       <Link
         to="/"
         className={`font-bold text-xl ${
-          isScroll ? "text-black" : "text-white"
+          isScroll || active ? "text-black" : "text-white"
         }`}
       >
         Padang Journey
       </Link>
       <ul
-        className={`flex items-center gap-10 ${
-          isScroll ? "text-black" : "text-white"
+        className={`desktop:flex hidden items-center gap-10 ${
+          isScroll || active ? "text-black" : "text-white"
         }`}
       >
         <Link to="/">
@@ -57,6 +67,19 @@ const Navbar = () => {
           <li>Tentang Kami</li>
         </Link>
       </ul>
+      {active ? (
+        <IoClose
+          className="desktop:hidden text-4xl text-black"
+          onClick={() => setActive(false)}
+        />
+      ) : (
+        <RiMenu4Line
+          className={`desktop:hidden text-4xl ${
+            isScroll ? "text-black" : "text-white"
+          } `}
+          onClick={() => setActive(true)}
+        />
+      )}
     </nav>
   );
 };

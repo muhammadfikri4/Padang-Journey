@@ -6,9 +6,9 @@ import { motion } from "framer-motion";
 
 const AboutPadang = () => {
   return (
-    <div className="flex justify-center">
-      <section className="px-10 py-5 flex gap-10">
-        <div className="flex flex-col gap-10">
+    <div className="flex desktop:flex-row flex-col justify-center">
+      <section className="px-10 py-5 flex desktop:flex-row flex-col desktop:gap-10 gap-3">
+        <div className="flex desktop:flex-col desktop:gap-10 gap-3">
           {wisata.slice(0, 2).map((item) => (
             <motion.div
               initial={{ opacity: 0, transform: "scale(0)" }}
@@ -19,7 +19,7 @@ const AboutPadang = () => {
                 <img
                   src={item.imageUrl}
                   alt={item.nama}
-                  className="object-cover w-64 h-40 rounded-3xl"
+                  className="desktop:rounded-3xl rounded-lg object-cover w-64 h-40"
                 />
               </Link>
             </motion.div>
@@ -34,12 +34,12 @@ const AboutPadang = () => {
             <img
               src={wisata[2].imageUrl}
               alt="wisata"
-              className="w-64 h-[360px] rounded-3xl object-cover "
+              className="desktop:w-64 desktop:h-[360px] desktop:rounded-3xl w-full rounded-lg object-cover"
             />
           </Link>
         </motion.div>
       </section>
-      <section className="flex flex-col gap-7 py-5 px-5 w-1/2">
+      <section className="flex flex-col gap-7 py-5 px-5 w-1/2 dekstop:text-base text-sm">
         <p>
           Kota Padang memiliki keindahan alam yang menarik, seperti pantai dan
           gunung yang mempesona. Beberapa tempat wisata populer di kota ini
