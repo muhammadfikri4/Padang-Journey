@@ -62,5 +62,35 @@
         "otherImage": ["https://firebasestorage.googleapis.com/v0/b/pariwisata-d318c.appspot.com/o/Pulau%20Pamutusan2.jpg?alt=media&token=949299f3-e683-4981-a2f6-5fcd95fd8bb2",
         "https://firebasestorage.googleapis.com/v0/b/pariwisata-d318c.appspot.com/o/Pulau%20Pamutusan3.jpg?alt=media&token=aa1d48a4-44b7-4ef0-98a3-5f28cd5ef080",
         "https://firebasestorage.googleapis.com/v0/b/pariwisata-d318c.appspot.com/o/Pulau%20Pamutusan4.jpg?alt=media&token=0424ba9d-097c-44e0-971f-63691a2f8ad8"]
+    },
+    {
+        "id": 105,
+        "nama": "Bukit Nobita",
+        "deskripsi": "Bukit yang bernama Nobita ini lokasinya cukup strategis dan tidak begitu jauh dari pusat Kota Padang. Tempat wisata ini berada di Jln. Kampung Jua Nan XX yang masih menjadi bagian dari kawasan Kecamatan Begalung. Untuk sampai di tempat wisata kekinian ini juga cukup gampang, karena akses jalan sudah sangat bagus, kemudian terdapat plang penunjuk arah yang bisa diikuti di sepanjang jalan. Jika datang dari Kota Padang, maka Anda hanya membutuhkan waktu sekitar 20 menit dengan berkendara saja.",
+        "latarBelakang": "Lokasi yang tadinya bernama bernama Bukit Batu Jarang ini kemudian disebut Bukit Nobita karena terinspirasi dari film kartun Doraemon. Dalam film tersebut sering diceritakan tokoh Nobita pergi main ke sebuah bukit di belakang sekolahnya. Dari atas bukit ia bersama temannya menikmati pemandangan kota.",
+        "kecamatan": "Lubuk Begalung",
+        "kota": "Kota Padang",
+        "provinsi": "Sumatra Barat",
+        "imageUrl": "https://firebasestorage.googleapis.com/v0/b/pariwisata-d318c.appspot.com/o/BukitNobita.jpg?alt=media&token=b858cb15-e256-4394-a635-da0cf7cb5816",
+        "locationUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15956.969466476083!2d100.40542571738283!3d-0.9735540999999956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2fd4ba22ed5a5921%3A0xa574a929210a5789!2sNobita%20Hill!5e0!3m2!1sen!2sus!4v1708952141826!5m2!1sen!2sus",
+        "otherImage": ["https://firebasestorage.googleapis.com/v0/b/pariwisata-d318c.appspot.com/o/BukitNobita2.png?alt=media&token=7ce8b445-63af-4477-b1ee-deda998f42c7",
+        "https://firebasestorage.googleapis.com/v0/b/pariwisata-d318c.appspot.com/o/BukitNobita4.jpg?alt=media&token=947a8699-ec45-402e-b372-46dc96b2676b",
+        "https://firebasestorage.googleapis.com/v0/b/pariwisata-d318c.appspot.com/o/BukitNobita3.jpg?alt=media&token=afe5aa21-e78c-46a3-bdb6-02bc4482d3c3"
+        ]
+    },
+    {
+        "id": 106,
+        "nama": "Pulau Pasumpahan",
+        "deskripsi": "Pulau Pasumpahan adalah sebuah pulau yang berada di perairan kecamatan Bungus Teluk Kabung Kota Padang provinsi Sumatera Barat, Indonesia. Klaim akan keindahan lautnya membuat pulau ini mulai dikenal oleh wisatawan lokal dan internasional. Pulau Pasumpahan berada sekitar 200 meter dari Pulau Sikuai. Pulau ini memiliki objek wisata pantai pasir putih dengan terumbu karang yang masih terjaga. Pulau ini diharapkan akan menjadi daerah tujuan wisata unggulan di provinsi Sumatera Barat. Pulau ini terletak di sebelah barat Pulau Setan Kecil, untuk menempuh pulau ini memakan waktu 10 menit dari Sungai Pisang dengan mesin 45 PK.",
+        "latarBelakang": "Pulau ini dinamakan Pasumpahan karena konon katanya bukit yang berada di pulau ini mirip dengan orang yang sedang sujud yang tak lain dan tak bukan merupakan jelmaan dari sang anak durhaka “Malin Kundang”. Menurut cerita lainnya, Pulau Pasumpahan merupakan latar belakang legenda Malin Kundang yang dikutuk ibunya menjadi batu. Konon, dipulau inilah Malin Kundang dikutuk menjadi batu. Setelah dikutuk tubuh Malin Kundang berubah menjadi batu di Pulau Pisang, Pantai Air Manih. Karena itulah ‘pasumpahan’ (disumpah) menjadi nama pulau ini",
+        "kecamatan": "Bungus Teluk Kabung",
+        "kota": "Kota Padang",
+        "provinsi": "Sumatra Barat",
+        "imageUrl": "https://firebasestorage.googleapis.com/v0/b/pariwisata-d318c.appspot.com/o/PulauPasumpahan4.jpg?alt=media&token=7f406283-c15f-4fc6-8165-b775ca9791ab",
+        "locationUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.058870645448!2d100.36746255!3d-1.11793735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2fd4a6a0c5edc909%3A0x528a71343dc31a9f!2sPulau%20Pasumpahan!5e0!3m2!1sid!2sid!4v1708961805492!5m2!1sid!2sid",
+        "otherImage": ["https://firebasestorage.googleapis.com/v0/b/pariwisata-d318c.appspot.com/o/PulauPasumpahan.jpg?alt=media&token=6cdc4653-d76f-42bc-8e67-80c8ea110f18",
+        "https://firebasestorage.googleapis.com/v0/b/pariwisata-d318c.appspot.com/o/PulauPasumpahan2.jpg?alt=media&token=401cd602-2ff3-4ec4-9121-19d859edd337",
+        "https://firebasestorage.googleapis.com/v0/b/pariwisata-d318c.appspot.com/o/PulauPasumpahan3.jpg?alt=media&token=f368b79f-1a0d-4e9e-bc81-6e2b1d23aae2"
+        ]
     }
 ]

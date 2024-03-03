@@ -1,13 +1,20 @@
 import React from "react";
+import ImageDescription from "./ImageDescription";
+import Information from "./Information";
 
-const Description = ({ title, description }) => {
+const Description = ({ data }) => {
   return (
-    <div className="flex flex-col desktop:gap-7 gap-4 desktop:py-5 px-5 desktop:w-1/2">
-      <h1 className="font-[MetropolisBold] text-2xl desktop:text-left text-center">
-        {title}
-      </h1>
-      <p className="font-[Metropolis] text-sm leading-6">{description}</p>
-    </div>
+    <>
+      <section className="py-10 flex flex-col sm:flex-row items-center justify-center sm:gap-20 gap-5">
+        <ImageDescription data={data} />
+        <Information
+          title="Deskripsi"
+          before={200}
+          after={0}
+          description={data.deskripsi}
+        />
+      </section>
+    </>
   );
 };
 

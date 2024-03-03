@@ -6,7 +6,7 @@ const Banner = ({ data }) => {
       <img
         src={data.imageUrl}
         alt={data.nama}
-        className="w-screen h-screen object-cover opacity-55"
+        className="w-full h-full object-cover opacity-55"
       />
     </div>
   );

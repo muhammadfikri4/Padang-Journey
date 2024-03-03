@@ -1,0 +1,98 @@
+[
+    {
+        "id": 200,
+        "nama": "Rendang",
+        "deskripsi": "Rendang (Minangkabau: randang; Jawi: رندڠ) adalah hidangan berbahan dasar daging yang dihasilkan dari proses memasak suhu rendah dalam waktu lama dengan menggunakan aneka rempah-rempah dan santan. Masakan ini populer di Indonesia dan negara-negara Asia Tenggara lainnya, seperti Malaysia, Singapura, Brunei, Filipina, dan Thailand. Di daerah asalnya, Minangkabau, rendang disajikan di berbagai upacara adat dan perhelatan istimewa.",
+        "imageUrl": "https://firebasestorage.googleapis.com/v0/b/pariwisata-d318c.appspot.com/o/Rendang.webp?alt=media&token=e004b23c-a999-4000-8a90-ff12bbb8da58",
+        "ulasan": {
+            "luarBiasa": 50,
+            "sangatBagus": 30,
+            "biasa": 10,
+            "buruk": 5,
+            "sangatBuruk": 3
+        },
+        "restaurantImage": "https://firebasestorage.googleapis.com/v0/b/pariwisata-d318c.appspot.com/o/RMPagiSore.jpg?alt=media&token=7cf1b24a-fc28-4b3e-8a1c-4252f98438a4",
+        "gallery": [
+            "https://firebasestorage.googleapis.com/v0/b/pariwisata-d318c.appspot.com/o/Rendang2.jpg?alt=media&token=dad0fe97-6cb0-4c39-9651-78219039df31",
+            "https://firebasestorage.googleapis.com/v0/b/pariwisata-d318c.appspot.com/o/Rendang3.jpg?alt=media&token=04eb063f-3a35-486b-b45f-62b0560ca8a0",
+            "https://firebasestorage.googleapis.com/v0/b/pariwisata-d318c.appspot.com/o/Rendang4.jpg?alt=media&token=78ef8e05-fca2-4fa8-906b-fc7fea2895f0"
+        ]
+    },
+    {
+        "id": 201,
+        "nama": "Sate Padang",
+        "deskripsi": "Sate padang adalah sebutan untuk tiga jenis varian sate di Sumatera Barat, yaitu Sate Padang, Sate Padang Panjang, dan Sate Pariaman. Namun karena adanya ekslusivitas istilah makanan, istilah sate Padang tidak digunakan di Sumatera Barat yang hanya merujuk pada sate daging, lidah, dan jeroan; sedangkan istilah ini hanya digunakan di luar Sumatera Barat.",
+        "imageUrl": "https://firebasestorage.googleapis.com/v0/b/pariwisata-d318c.appspot.com/o/SatePadang.webp?alt=media&token=776b9266-f687-4d78-bf1e-703f0cd51979",
+        "ulasan": {
+            "luarBiasa": 37,
+            "sangatBagus": 20,
+            "biasa": 23,
+            "buruk": 15,
+            "sangatBuruk": 5
+        },
+        "testimoni": [
+            {
+            "nama": "Anonymous",
+            "fotoProfil": "https://firebasestorage.googleapis.com/v0/b/pariwisata-d318c.appspot.com/o/customer1.svg?alt=media&token=2c86e419-7c7e-40b5-9780-c0ac83ffa656",
+            "rating": 5,
+            "komen": "Wow, baru saja selesai menikmati sate Padang di restoran ini, dan rasanya benar-benar luar biasa! Dagingnya sangat empuk dan bumbu kacangnya begitu kaya rempah. Sungguh pengalaman makan yang memuaskan!"
+        },
+            {
+            "nama": "Anonymous",
+            "fotoProfil": "https://firebasestorage.googleapis.com/v0/b/pariwisata-d318c.appspot.com/o/customer1.svg?alt=media&token=2c86e419-7c7e-40b5-9780-c0ac83ffa656",
+            "rating": 4,
+            "komen": "Sate Padang di restoran ini sungguh tak tertandingi. Saya suka bagaimana dagingnya disajikan dengan sempurna dan bumbu kacangnya begitu lezat. Pasti akan kembali lagi untuk menikmatinya!"
+        },
+            {
+            "nama": "Anonymous",
+            "fotoProfil": "https://firebasestorage.googleapis.com/v0/b/pariwisata-d318c.appspot.com/o/customer1.svg?alt=media&token=2c86e419-7c7e-40b5-9780-c0ac83ffa656",
+            "rating": 4,
+            "komen": "Hari ini saya mencoba sate Padang di restoran ini dan rasanya sungguh menggugah selera! Dagingnya begitu gurih dan bumbu kacangnya begitu mantap. Tidak sabar untuk kembali mencicipi hidangan lainnya di sini!"
+        }
+    ],
+    "restaurantImage":"https://firebasestorage.googleapis.com/v0/b/pariwisata-d318c.appspot.com/o/RMSateManangkabau2.jpg?alt=media&token=7ffd5e48-b495-4625-9777-a8f72e82e6af",
+    "gallery": ["https://firebasestorage.googleapis.com/v0/b/pariwisata-d318c.appspot.com/o/SatePadang2.jpg?alt=media&token=e5d80210-e189-45db-9336-d2eb9e360d8b",
+"https://firebasestorage.googleapis.com/v0/b/pariwisata-d318c.appspot.com/o/SatePadang3.webp?alt=media&token=dbf1ded8-3c18-4955-b749-24a709c3343f", "https://firebasestorage.googleapis.com/v0/b/pariwisata-d318c.appspot.com/o/SatePadang4.png?alt=media&token=612f0566-5fae-4117-b1af-4e800775e4b9"]
+    },
+    {
+        "id": 202,
+        "nama": "Gulai Ayam",
+        "deskripsi": "Gulai ayam merupakan menu favorit di rumah makan Padang. Daging ayam yang empuk dengan bumbu gulai meresap enak dimakan dengan nasi. Ini resep membuatnya. Selain rendang, masakan Minang di rumah makan Padang sangat beragam. Untuk olahan ayam, gulai ayam jadi favorit banyak orang. Potongan ayam direndam kuah santan berempah memang sangat lezat. Gulai adalah masakan Minang berbahan baku ayam atau daging atau ikan. Kemudian dimasak dengan aneka rempah dan santan kelapa segar.",
+        "imageUrl": "https://firebasestorage.googleapis.com/v0/b/pariwisata-d318c.appspot.com/o/gulai.jpeg?alt=media&token=094ed131-3ea7-423c-91ff-fe07f99eff4d",
+        "ulasan": {
+            "luarBiasa": 37,
+            "sangatBagus": 20,
+            "biasa": 23,
+            "buruk": 15,
+            "sangatBuruk": 5
+        },
+        
+        "restaurantImage":"https://firebasestorage.googleapis.com/v0/b/pariwisata-d318c.appspot.com/o/RmPauhPiaman.jpg?alt=media&token=bb1c6c36-c816-483c-9fd1-3ffa6af27445",
+        "gallery": [
+            "https://firebasestorage.googleapis.com/v0/b/pariwisata-d318c.appspot.com/o/gulai2.jpg?alt=media&token=06749a7a-c017-44e8-8505-c01dbcb1d34c",
+            "https://firebasestorage.googleapis.com/v0/b/pariwisata-d318c.appspot.com/o/gulai3.webp?alt=media&token=272bd919-a2b7-46b0-990f-e8be9552c78e",
+            "https://firebasestorage.googleapis.com/v0/b/pariwisata-d318c.appspot.com/o/gulai4.jpg?alt=media&token=5dd7a270-c552-4a7f-a492-5b08a0097876"
+        ]
+    },
+    {
+        "id": 203,
+        "nama": "Dendeng Balado",
+        "deskripsi": "Dendeng balado adalah masakan khas Sumatera Barat dibuat dari irisan tipis dan lebar daging sapi yang awalnya direbus terlebih dahulu, dijemur hingga kering, dan akan digoreng hingga garing.",
+        "imageUrl": "https://firebasestorage.googleapis.com/v0/b/pariwisata-d318c.appspot.com/o/DendengBalado.webp?alt=media&token=fa0fba48-0ab2-4838-86c4-4c9261481010",
+        "ulasan": {
+            "luarBiasa": 37,
+            "sangatBagus": 20,
+            "biasa": 23,
+            "buruk": 15,
+            "sangatBuruk": 5
+        },
+        "restaurantImage":"https://firebasestorage.googleapis.com/v0/b/pariwisata-d318c.appspot.com/o/RmPauhPiaman.jpg?alt=media&token=bb1c6c36-c816-483c-9fd1-3ffa6af27445",
+        "gallery": [
+            "https://firebasestorage.googleapis.com/v0/b/pariwisata-d318c.appspot.com/o/DendengBalado2.jpg?alt=media&token=9d6878da-8fc3-46c1-a28e-9ed64519bcea",
+            "https://firebasestorage.googleapis.com/v0/b/pariwisata-d318c.appspot.com/o/DendengBalado3.webp?alt=media&token=796f88e1-5aa2-4dd3-8052-2a7d6a9078d8",
+            "https://firebasestorage.googleapis.com/v0/b/pariwisata-d318c.appspot.com/o/DendengBalado4.jpg?alt=media&token=6c076ed8-5d00-4e5d-acf3-de5e41913c98"
+        ]
+    }
+    
+]
+

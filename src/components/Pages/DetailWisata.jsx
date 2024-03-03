@@ -12,7 +12,17 @@ import NotFound from "../Fragments/NotFound";
 const DetailWisata = () => {
   const { id } = useParams();
   const data = wisata.find((item) => item.id == id);
-  return <>{!data ? <NotFound /> : <Layout data={data} />}</>;
+  return (
+    <>
+      {!data ? (
+        <div className="flex justify-center items-center">
+          <NotFound width="100vw" height="100vh" />
+        </div>
+      ) : (
+        <Layout data={data} />
+      )}
+    </>
+  );
 };
 
 export default DetailWisata;
