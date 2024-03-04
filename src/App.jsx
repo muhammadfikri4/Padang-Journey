@@ -8,7 +8,6 @@ import NotFound from "./components/Fragments/NotFound";
 import Kuliner from "./components/Pages/Kuliner";
 import DetailKuliner from "./components/Pages/DetailKuliner";
 import Favorit from "./components/Pages/Favorit";
-import About from "./components/Pages/About";
 
 function App() {
   const [navActive, setNavActive] = useState(false);

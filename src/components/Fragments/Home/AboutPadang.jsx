@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 const AboutPadang = () => {
   return (
-    <div className="flex flex-col px-10 py-10 gap-10">
+    <div className="flex flex-col px-10 py-10 gap-10 overflow-x-hidden">
       <motion.h1
         initial={{ x: -150 }}
         whileInView={{ x: 0 }}

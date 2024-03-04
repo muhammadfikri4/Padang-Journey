@@ -13,6 +13,7 @@ import { Like, LikeKuliner } from "../../../utils/Function/Like";
 import { motion } from "framer-motion";
 import FavoritList from "../../Fragments/Favorit/FavoritList";
 import Banner from "../../Fragments/Favorit/Banner";
+import Footer from "../../Fragments/Footer";
 
 const Layout = () => {
   const [kuliner, setKuliner] = useState(
@@ -52,6 +53,7 @@ const Layout = () => {
           </p>
         </div>
       )}
+      <Footer />
     </div>
   );
 };

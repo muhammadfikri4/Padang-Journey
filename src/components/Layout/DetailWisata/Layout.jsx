@@ -8,6 +8,7 @@ import LocationList from "../../Fragments/DetailWisata/LocationList";
 import Maps from "../../Fragments/DetailWisata/Maps";
 import OtherWisataList from "../../Fragments/DetailWisata/OtherWisataList";
 import Title from "../../Fragments/DetailWisata/Title";
+import Footer from "../../Fragments/Footer";
 
 const Layout = ({ data }) => {
   // const images = [data.imageUrl, ...data.otherImage];
@@ -34,6 +35,7 @@ const Layout = ({ data }) => {
         <Galery data={data} />
       </div>
       <OtherWisataList wisata={wisata} />
+      <Footer />
     </div>
   );
 };

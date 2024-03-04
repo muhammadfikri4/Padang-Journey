@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const LatarBelakang = ({ data }) => {
   return (
-    <section className="flex flex-col-reverse sm:flex-row py-10 justify-center sm:gap-20 gap-5">
+    <section className="flex flex-col-reverse sm:flex-row py-10 justify-center sm:gap-20 gap-5 overflow-x-hidden">
       <Information
         title="Latar Belakang"
         description={data.latarBelakang}
