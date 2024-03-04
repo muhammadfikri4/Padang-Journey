@@ -234,7 +234,7 @@ export default function SliderTraveling() {
             </button>
             <div className="slider-list mx-[63px] duration-700 right-0 absolute h-full w-full">
               <div className="flex flex-row-reverse absolute right-0 items-stretch gap-3 min-w-max h-full slider-track">
-                {kuliner.slice(0, 4).map((item, i) => (
+                {kuliner.slice.map((item, i) => (
                   <div className="card-slider relative overflow-hidden" key={i}>
                     <div className="bg-white h-full rounded-[50px] cursor-pointer overflow-hidden relative">
                       <img
