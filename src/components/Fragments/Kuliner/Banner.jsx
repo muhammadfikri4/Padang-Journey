@@ -14,7 +14,7 @@ const Banner = () => {
   }, []);
   return (
     <>
-      <div className="grid md:grid-cols-2 grid-cols-1">
+      <div className="grid md:grid-cols-2 grid-cols-1 overflow-x-hidden">
         <div className="flex flex-col sm:justify-center gap-5 sm:items-center sm:px-5 px-4 md:order-1 order-2 sm:mt-0 mt-5">
           <motion.h1
             initial={{ x: -150 }}

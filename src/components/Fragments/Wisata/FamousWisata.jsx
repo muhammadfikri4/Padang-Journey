@@ -21,7 +21,7 @@ const FamousWisata = ({ wisata }) => {
 
   return (
     <>
-      <div className="pb-10 px-5 my-14 grid md:grid-cols-4 md:grid-rows-2 sm:grid-cols-3 sm:grid-rows-3 grid-cols-2 grid-rows-4 sm:gap-5 gap-3">
+      <div className="pb-10 px-5 my-14 grid md:grid-cols-4 md:grid-rows-2 sm:grid-cols-3 sm:grid-rows-3 grid-cols-2 grid-rows-4 sm:gap-5 gap-3 overflow-x-hidden">
         <motion.h1
           initial={{ opacity: 0, x: -100 }}
           whileInView={{ opacity: 1, x: 0 }}
