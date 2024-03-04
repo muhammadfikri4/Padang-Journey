@@ -8,14 +8,16 @@ import LikeButton from "./LikeButton";
 const FamousWisata = ({ wisata }) => {
   const [isLiked, setIsLiked] = useState(false);
 
-  // useEffect(() => {
-  //   findLike({ setIsLiked, data });
-  // })
-  const liked = JSON.parse(localStorage.getItem("like-wisata")) || [];
+  const [liked, setLiked] = useState(
+    JSON.parse(localStorage.getItem("like-wisata")) || []
+  );
   const checkLiked = (id) => {
     const result = liked.find((item) => item.id == id);
     return result;
   };
+  useEffect(() => {
+    setLiked(JSON.parse(localStorage.getItem("like-wisata")));
+  }, [isLiked]);
 
   return (
     <>
@@ -39,12 +41,27 @@ const FamousWisata = ({ wisata }) => {
             src={wisata[0].imageUrl}
             alt="image"
           />
-          <div className="absolute -top-1 -right-1 ">
+          <div
+            className="absolute -top-1 -right-1 "
+            onClick={() =>
+              (() => {
+                Like({ data: wisata[0], setIsLiked });
+                setLiked(JSON.parse(localStorage.getItem("like-wisata")) || []);
+              })()
+            }
+          >
             <LikeButton
               data={wisata[0]}
               checkLiked={checkLiked}
               setIsLiked={setIsLiked}
             />
+            {/* <div className="bg-white p-2 rounded-bl-xl cursor-pointer">
+              {checkLiked(wisata[0].id) ? (
+                <IoMdHeart className="text-black text-2xl" />
+              ) : (
+                <IoMdHeartEmpty className="text-black text-2xl" />
+              )}
+            </div> */}
           </div>
         </motion.div>
         {wisata.slice(3, 7).map((item, index) => (
@@ -60,7 +77,17 @@ const FamousWisata = ({ wisata }) => {
               src={item.imageUrl}
               alt={item.nama}
             />
-            <div className="absolute -top-1 -right-1 ">
+            <div
+              className="absolute -top-1 -right-1 "
+              onClick={() =>
+                (() => {
+                  Like({ data: item, setIsLiked });
+                  setLiked(
+                    JSON.parse(localStorage.getItem("like-wisata")) || []
+                  );
+                })()
+              }
+            >
               <LikeButton
                 setIsLiked={setIsLiked}
                 checkLiked={checkLiked}
@@ -80,7 +107,15 @@ const FamousWisata = ({ wisata }) => {
             src={wisata[2].imageUrl}
             alt={wisata[2].nama}
           />
-          <div className="absolute top-0 right-0 ">
+          <div
+            className="absolute top-0 right-0 "
+            onClick={() =>
+              (() => {
+                Like({ data: wisata[2], setIsLiked });
+                setLiked(JSON.parse(localStorage.getItem("like-wisata")) || []);
+              })()
+            }
+          >
             <LikeButton
               data={wisata[2]}
               checkLiked={checkLiked}

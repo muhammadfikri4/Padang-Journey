@@ -14,8 +14,8 @@ const Banner = () => {
   }, []);
   return (
     <>
-      <div className="grid sm:grid-cols-2 grid-cols-1">
-        <div className="flex flex-col sm:justify-center gap-5 sm:items-center sm:px-5 px-4 sm:order-1 order-2 sm:mt-0 mt-5">
+      <div className="grid md:grid-cols-2 grid-cols-1">
+        <div className="flex flex-col sm:justify-center gap-5 sm:items-center sm:px-5 px-4 md:order-1 order-2 sm:mt-0 mt-5">
           <motion.h1
             initial={{ x: -150 }}
             whileInView={{ x: 0 }}
@@ -29,7 +29,7 @@ const Banner = () => {
             initial={{ x: 150 }}
             whileInView={{ x: 0 }}
             transition={{ duration: 0.5 }}
-            className="font-[Metropolis] sm:text-base text-sm"
+            className="font-[Metropolis] sm:text-base text-sm "
           >
             Padang mempunyai kuliner yang kaya dan bervariasi, menjadi salah
             satu kebanggaan dari Provinsi Sumatera Barat, Indonesia. Dikenal
@@ -41,14 +41,14 @@ const Banner = () => {
           initial={{ x: 150 }}
           whileInView={{ x: 0 }}
           transition={{ duration: 0.5 }}
-          className=" sm:order-2 order-1"
+          className=" md:order-2 order-1 z-[10]"
         >
           <img
             src={
               "https://firebasestorage.googleapis.com/v0/b/pariwisata-d318c.appspot.com/o/SatePadang.webp?alt=media&token=776b9266-f687-4d78-bf1e-703f0cd51979"
             }
             alt="img"
-            className="sm:w-full sm:h-screen w-screen h-[50vh] object-cover sm:rounded-bl-xl rounded-none"
+            className="md:w-full md:h-screen w-screen h-[50vh] object-cover md:rounded-bl-xl rounded-none"
           />
           <div
             className={`${

@@ -29,9 +29,14 @@ const Layout = () => {
         <Banner />
 
         <div className="flex justify-center py-10">
-          <h1 className="font-[MetropolisBold] sm:text-4xl text-2xl text-center sm:pb-5 pb-2 border border-t-0 border-x-0 border-b-black w-max h-max">
+          <motion.h1
+            initial={{ x: -150 }}
+            whileInView={{ x: 0 }}
+            transition={{ duration: 0.5 }}
+            className="font-[MetropolisBold] sm:text-4xl text-2xl text-center sm:pb-5 pb-2 border border-t-0 border-x-0 border-b-black w-max h-max"
+          >
             Paling Sering Di Kunjungi
-          </h1>
+          </motion.h1>
         </div>
         <InterestWisata wisata={wisata} />
 

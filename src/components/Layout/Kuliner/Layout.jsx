@@ -17,11 +17,18 @@ const Layout = () => {
   const { findActive, setFindActive } = useStore();
   const [isLiked, setIsLiked] = useState(false);
   const [data, setData] = useState(kuliner);
-  const liked = JSON.parse(localStorage.getItem("like-kuliner")) || [];
+  // const liked = JSON.parse(localStorage.getItem("like-kuliner")) || [];
+  const [liked, setLiked] = useState(
+    JSON.parse(localStorage.getItem("like-kuliner")) || []
+  );
   const checkLiked = (id) => {
     const result = liked.find((item) => item.id == id);
     return result;
   };
+  useEffect(() => {
+    setLiked(JSON.parse(localStorage.getItem("like-kuliner")));
+  }, [isLiked]);
+
   return (
     <>
       <div className={`${findActive && "hidden"}`}>
@@ -62,6 +69,7 @@ const Layout = () => {
           kuliner={kuliner}
           checkLiked={checkLiked}
           setIsLiked={setIsLiked}
+          setLiked={setLiked}
         />
         <Footer />
       </div>

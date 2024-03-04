@@ -12,6 +12,14 @@
 }
 
 :root {
-    overflow-x: hidden;
     scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+    width: 0;
+}
+
+body {
+    overflow-x: hidden;
+
 }

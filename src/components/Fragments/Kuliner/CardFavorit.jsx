@@ -3,8 +3,9 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { MdArrowRightAlt } from "react-icons/md";
 import LikeButton from "./LikeButton";
+import { LikeKuliner } from "../../../utils/Function/Like";
 
-const CardFavorit = ({ item, i, checkLiked, setIsLiked }) => {
+const CardFavorit = ({ item, i, checkLiked, setIsLiked, setLiked }) => {
   return (
     <motion.div
       initial={{ transform: "scale(0)" }}
@@ -36,7 +37,15 @@ const CardFavorit = ({ item, i, checkLiked, setIsLiked }) => {
           </div>
         </>
       </Link>
-      <div className="absolute -top-1 -right-1 ">
+      <div
+        className="absolute -top-1 -right-1 "
+        onClick={() =>
+          (() => {
+            LikeKuliner({ data: item, setIsLiked });
+            setLiked(JSON.parse(localStorage.getItem("like-kuliner")) || []);
+          })()
+        }
+      >
         <LikeButton
           checkLiked={() => checkLiked(item.id)}
           setIsLiked={setIsLiked}

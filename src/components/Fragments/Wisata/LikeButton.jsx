@@ -7,7 +7,7 @@ const LikeButton = ({ checkLiked, setIsLiked, data }) => {
   return (
     <div
       className="bg-white p-2 rounded-bl-xl cursor-pointer"
-      onClick={() => Like({ data, setIsLiked })}
+      // onClick={() => Like({ data, setIsLiked })}
     >
       {checkLiked(data.id) ? (
         <IoMdHeart className="text-black text-2xl" />

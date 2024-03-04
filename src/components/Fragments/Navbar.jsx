@@ -94,9 +94,6 @@ const Navbar = ({ navActive, setNavActive }) => {
           <Link to="/favorit">
             <li>Favorit</li>
           </Link>
-          <Link to="/tentang">
-            <li>Tentang</li>
-          </Link>
         </ul>
         <div className="flex items-center justify-center gap-3">
           <div
@@ -178,9 +175,6 @@ const Navbar = ({ navActive, setNavActive }) => {
         </Link>
         <Link to={`/favorit`} onClick={() => setActive(!active)}>
           <p className="hover:bg-gray-100 px-5 py-3">Favorit</p>
-        </Link>
-        <Link to={`/tentang`} onClick={() => setActive(!active)}>
-          <p className="hover:bg-gray-100 px-5 py-3">Tentang</p>
         </Link>
       </div>
     </nav>

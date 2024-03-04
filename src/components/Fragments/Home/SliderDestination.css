@@ -17,6 +17,15 @@
       rgba(0, 0, 0, 0) 100%
     );
     pointer-events: none;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+    
+  }
+  .destination .slider-ready.hero-slider::before {
+    border-radius: 0 !important;
+  }
+  .destination .slider-ready.hero-slider::after {
+    border-radius: 0 !important;
   }
   .destination .hero-slider::before {
     content: "";
@@ -26,6 +35,8 @@
     height: 100%;
     pointer-events: none;
     background-color: rgba(0, 0, 0, 0.25);
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
   }
   .destination .hero-slider.slider-ready {
     margin-left: 0 !important;

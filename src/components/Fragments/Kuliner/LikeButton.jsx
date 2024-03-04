@@ -10,7 +10,7 @@ const LikeButton = ({ checkLiked, setIsLiked, data, bg, bot }) => {
         bot ? "rounded-lg" : "rounded-bl-xl"
       } cursor-pointer z-5`}
       style={{ backgroundColor: bg || "white" }}
-      onClick={() => LikeKuliner({ data, setIsLiked })}
+      // onClick={() => LikeKuliner({ data, setIsLiked })}
     >
       {checkLiked(data.id) ? (
         <IoMdHeart className="text-black text-2xl" />
