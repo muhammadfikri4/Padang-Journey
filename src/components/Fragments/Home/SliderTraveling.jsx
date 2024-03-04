@@ -27,7 +27,7 @@ export default function SliderTraveling() {
     return result;
   };
   useEffect(() => {
-    setLiked(JSON.parse(localStorage.getItem("like-kuliner")));
+    setLiked(JSON.parse(localStorage.getItem("like-kuliner")) || []);
   }, [isLiked]);
   useEffect(() => {
     const sliderTrack = document.querySelector(".traveling .slider-track");

@@ -28,7 +28,7 @@ export default function SliderDestination() {
     return result;
   };
   useEffect(() => {
-    setLiked(JSON.parse(localStorage.getItem("like-wisata")));
+    setLiked(JSON.parse(localStorage.getItem("like-wisata")) || []);
   }, [isLiked]);
   useEffect(() => {
     const sliderTrack = document.querySelector(".destination .slider-track");
