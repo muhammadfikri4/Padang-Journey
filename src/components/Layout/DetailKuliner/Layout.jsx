@@ -28,11 +28,11 @@ const Layout = ({ data }) => {
         <div className="flex md:flex-row w-full flex-col-reverse items-center justify-center sm:gap-20 gap-5 md:px-2 sm:px-2 px-3">
           <Description data={data} kuliner={kuliner} />
         </div>
-        <div className="flex md:flex-row flex-col justify-center gap-20 py-28 md:px-2 px-3">
+        <div className="flex lg:flex-row flex-col justify-center gap-20 py-28 md:px-2 px-3">
           <Testimoni data={data} />
         </div>
 
-        <div className="flex sm:flex-row flex-col-reverse justify-center gap-20 py-10 items-center sm:px-0 px-3">
+        <div className="flex lg:flex-row flex-col-reverse justify-center gap-20 py-10 items-center sm:px-5 px-3">
           <Review data={data} />
           <Galery data={data} />
         </div>

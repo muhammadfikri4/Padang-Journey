@@ -13,8 +13,8 @@ const Home = () => {
   return (
     <>
       <Layout />
-      <div className="flex justify-center"></div>
-      <br />
+      {/* <div className="flex justify-center"></div>
+      <br /> */}
     </>
   );
 };

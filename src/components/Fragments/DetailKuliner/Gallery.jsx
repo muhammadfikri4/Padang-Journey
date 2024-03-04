@@ -4,7 +4,7 @@ import wisata from "../../../utils/Wisata.json";
 
 const Galery = ({ data }) => {
   return (
-    <Carousel className="rounded-xl sm:w-1/2 w-full sm:h-72 h-52">
+    <Carousel className="rounded-xl lg:w-1/2 w-full lg:h-72 h-60">
       <div className="flex w-full h-full gap-1">
         <img
           src={data.imageUrl}

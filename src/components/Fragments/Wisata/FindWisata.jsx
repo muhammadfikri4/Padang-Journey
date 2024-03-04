@@ -21,9 +21,10 @@ const FindWisata = ({ data, findWisata, wisata, setData }) => {
       </div>
       <div className="flex flex-col gap-5 mt-5">
         {data.length > 0 ? (
-          data.map((item) => (
+          data.map((item, i) => (
             <Link
               to={`/wisata/${item.id}`}
+              key={i}
               className="w-screen px-5 flex gap-5"
             >
               <img

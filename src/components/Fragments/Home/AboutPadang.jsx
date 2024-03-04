@@ -47,16 +47,12 @@ const AboutPadang = () => {
           </motion.div>
         </section>
         <section className="flex flex-col gap-2 lg:gap-7 lg:text-base text-sm py-5 flex-1">
-          <p>
+          <p className="leading-7">
             Kota Padang memiliki keindahan alam yang menarik, seperti pantai dan
             gunung yang mempesona. Beberapa tempat wisata populer di kota ini
             antara lain Pantai Padang, Pantai Air Manis, Bukit Tinggi, Danau
             Maninjau, dan Gunung Marapi.Kota Padang juga terkenal dengan masakan
-            Padang yang terkenal di seluruh Indonesia dan bahkan dunia. Masakan
-            Padang yang terkenal adalah nasi rendang, gulai ayam, dendeng
-            balado, dan sate padang.Selain itu, Kota Padang juga memiliki
-            sejarah dan budaya yang kaya, seperti adat Minangkabau yang masih
-            dijaga hingga saat ini.
+            Padang yang terkenal di seluruh Indonesia dan bahkan dunia.
           </p>
           <Button />
         </section>
