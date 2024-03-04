@@ -47,7 +47,7 @@ const Layout = () => {
           setKuliner={setKuliner}
         />
       ) : (
-        <div className="flex justify-center items-center">
+        <div className="flex justify-center items-center py-20">
           <p className="text-center font-[MetropolisBold]">
             Anda Tidak Menyukai Apapun!
           </p>

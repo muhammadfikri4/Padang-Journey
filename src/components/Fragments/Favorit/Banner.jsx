@@ -9,7 +9,7 @@ const Banner = () => {
         initial={{ x: -150 }}
         animate={{ x: 0 }}
         transition={{ duration: 0.5 }}
-        className="font-[Montserrat] lg:text-5xl md:text-4xl sm:text-2xl text-2xl relative left-20 -top-1/3"
+        className="font-[Montserrat] lg:text-5xl md:text-4xl sm:text-2xl text-xl relative sm:left-10 left-2 -top-1/3 sm:px-0 px-2"
       >
         Wisata / Kuliner yang Anda Sukai
       </motion.h1>
