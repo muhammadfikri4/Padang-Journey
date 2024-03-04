@@ -105,7 +105,7 @@ export default function PadangAssets() {
               className="text-sm md:text-base lg:text-lg font-semibold px-4 py-2"
               style={{ lineHeight: "1.1rem" }}
             >
-              Lorem ipsum
+              {wisata[4].nama}
             </h3>
           </motion.div>
           <motion.div
