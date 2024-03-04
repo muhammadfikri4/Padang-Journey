@@ -15,9 +15,9 @@ import { findKuliner } from "../../../utils/Function/Find";
 
 const Layout = () => {
   const { findActive, setFindActive } = useStore();
-  const [isLiked, setIsLiked] = useState(false);
   const [data, setData] = useState(kuliner);
   // const liked = JSON.parse(localStorage.getItem("like-kuliner")) || [];
+  const [isLiked, setIsLiked] = useState(false);
   const [liked, setLiked] = useState(
     JSON.parse(localStorage.getItem("like-kuliner")) || []
   );
@@ -31,7 +31,7 @@ const Layout = () => {
 
   return (
     <>
-      <div className={`${findActive && "hidden"}`}>
+      <div className={`${findActive && "hidden"} overflow-x-hidden`}>
         <Banner />
 
         <div className="flex flex-col justify-center pt-10 px-5">

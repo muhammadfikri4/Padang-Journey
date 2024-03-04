@@ -3,6 +3,9 @@ import { FaChevronLeft, FaChevronRight } from "react-icons/fa6";
 import "./SliderTraveling.css";
 import { motion } from "framer-motion";
 import kuliner from "../../../utils/Kuliner.json";
+import { LikeKuliner } from "../../../utils/Function/Like";
+import { IoMdHeart, IoMdHeartEmpty } from "react-icons/io";
+import { Link } from "react-router-dom";
 
 export default function SliderTraveling() {
   const [viewCard, setViewCard] = useState(5);
@@ -15,7 +18,17 @@ export default function SliderTraveling() {
     useState(true);
   const [visibleButtonCloseSlider, setVisibleButtonCloseSlider] =
     useState(false);
-
+  const [isLiked, setIsLiked] = useState(false);
+  const [liked, setLiked] = useState(
+    JSON.parse(localStorage.getItem("like-kuliner")) || []
+  );
+  const checkLiked = (id) => {
+    const result = liked.find((item) => item.id == id);
+    return result;
+  };
+  useEffect(() => {
+    setLiked(JSON.parse(localStorage.getItem("like-kuliner")));
+  }, [isLiked]);
   useEffect(() => {
     const sliderTrack = document.querySelector(".traveling .slider-track");
     const gapSliderTrack = parseFloat(getComputedStyle(sliderTrack).gap);
@@ -184,9 +197,12 @@ export default function SliderTraveling() {
             <h1 className="font-[Montserrat] text-2xl md:text-4xl lg:text-5xl text-white font-bold">
               Kuliner
             </h1>
-            <button className="font-[Metropolis] text-[10px] md:text-sm lg:text-base text-white border border-white py-2 px-4 rounded mt-4 hover:bg-white hover:text-black">
+            <Link
+              to={"/kuliner"}
+              className="font-[Metropolis] text-[10px] md:text-sm lg:text-base text-white border border-white py-2 px-4 rounded mt-4 hover:bg-white hover:text-black"
+            >
               Jelajahi
-            </button>
+            </Link>
           </div>
         </div>
         <div className="opacity-0 right-0 transform translate-x-30 transition-all ease-in-out duration-500 delay-100 absolute top-3 z-20 header-slider">
@@ -219,7 +235,7 @@ export default function SliderTraveling() {
             <div className="slider-list mx-[63px] duration-700 right-0 absolute h-full w-full">
               <div className="flex flex-row-reverse absolute right-0 items-stretch gap-3 min-w-max h-full slider-track">
                 {kuliner.slice(0, 4).map((item, i) => (
-                  <div className="card-slider" key={i}>
+                  <div className="card-slider relative overflow-hidden" key={i}>
                     <div className="bg-white h-full rounded-[50px] cursor-pointer overflow-hidden relative">
                       <img
                         className="w-full h-full object-cover"
@@ -230,6 +246,35 @@ export default function SliderTraveling() {
                         <p className="sm:text-xl text-white font-bold">
                           {item.nama}
                         </p>
+                      </div>
+                      <div
+                        className="absolute top-4 right-4"
+                        onClick={() =>
+                          (() => {
+                            LikeKuliner({ data: item, setIsLiked });
+                            setLiked(
+                              JSON.parse(
+                                localStorage.getItem("like-kuliner")
+                              ) || []
+                            );
+                          })()
+                        }
+                      >
+                        {/* <LikeButton
+                        data={item}
+                        setIsLiked={setIsLiked}
+                        checkLiked={checkLiked}
+                      /> */}
+                        <div
+                          className="bg-white p-2 rounded-xl cursor-pointer"
+                          // onClick={() => Like({ data, setIsLiked })}
+                        >
+                          {checkLiked(item.id) ? (
+                            <IoMdHeart className="text-black text-2xl" />
+                          ) : (
+                            <IoMdHeartEmpty className="text-black text-2xl" />
+                          )}
+                        </div>
                       </div>
                     </div>
                   </div>

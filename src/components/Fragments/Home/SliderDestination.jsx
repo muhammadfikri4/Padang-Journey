@@ -4,6 +4,9 @@ import "./SliderDestination.css";
 import wisata from "../../../utils/Wisata.json";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import LikeButton from "../Wisata/LikeButton";
+import { IoMdHeart, IoMdHeartEmpty } from "react-icons/io";
+import { Like, LikeKuliner } from "../../../utils/Function/Like";
 
 export default function SliderDestination() {
   const [viewCard, setViewCard] = useState(5);
@@ -16,7 +19,17 @@ export default function SliderDestination() {
     useState(true);
   const [visibleButtonCloseSlider, setVisibleButtonCloseSlider] =
     useState(false);
-
+  const [isLiked, setIsLiked] = useState(false);
+  const [liked, setLiked] = useState(
+    JSON.parse(localStorage.getItem("like-wisata")) || []
+  );
+  const checkLiked = (id) => {
+    const result = liked.find((item) => item.id == id);
+    return result;
+  };
+  useEffect(() => {
+    setLiked(JSON.parse(localStorage.getItem("like-wisata")));
+  }, [isLiked]);
   useEffect(() => {
     const sliderTrack = document.querySelector(".destination .slider-track");
     const gapSliderTrack = parseFloat(getComputedStyle(sliderTrack).gap);
@@ -222,7 +235,7 @@ export default function SliderDestination() {
             <div className="slider-list mx-[63px] duration-700 absolute left-0 h-full w-full">
               <div className="flex items-stretch gap-3 min-w-max absolute left-0 h-full slider-track">
                 {wisata.slice(0, 4).map((item, i) => (
-                  <div className="card-slider" key={i}>
+                  <div className="card-slider relative overflow-hidden" key={i}>
                     <div className="bg-white h-full rounded-[50px] cursor-pointer overflow-hidden relative">
                       <img
                         className="w-full h-full object-cover"
@@ -233,6 +246,34 @@ export default function SliderDestination() {
                         <p className="sm:text-xl text-white font-bold">
                           {item.nama}
                         </p>
+                      </div>
+                      <div
+                        className="absolute top-4 right-4"
+                        onClick={() =>
+                          (() => {
+                            Like({ data: item, setIsLiked });
+                            setLiked(
+                              JSON.parse(localStorage.getItem("like-wisata")) ||
+                                []
+                            );
+                          })()
+                        }
+                      >
+                        {/* <LikeButton
+                        data={item}
+                        setIsLiked={setIsLiked}
+                        checkLiked={checkLiked}
+                      /> */}
+                        <div
+                          className="bg-white p-2 rounded-xl cursor-pointer"
+                          // onClick={() => Like({ data, setIsLiked })}
+                        >
+                          {checkLiked(item.id) ? (
+                            <IoMdHeart className="text-black text-2xl" />
+                          ) : (
+                            <IoMdHeartEmpty className="text-black text-2xl" />
+                          )}
+                        </div>
                       </div>
                     </div>
                   </div>

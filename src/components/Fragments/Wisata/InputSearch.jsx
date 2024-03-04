@@ -10,17 +10,17 @@ const InputSearch = ({ onClick }) => {
     <>
       <div className="sm:hidden flex justify-center z-96">
         <div
-          className="sm:hidden flex justify-center items-center gap-2 fixed bottom-10 bg-[#e9fcc3] px-5 py-3 rounded-lg font-[Montserrat] text-[#4bca11] z-20 cursor-pointer"
+          className="sm:hidden flex justify-center items-center gap-2 fixed bottom-10 bg-[#4bca11] px-2 py-2 rounded-lg font-[Montserrat] text-[#e9fcc3] z-20 cursor-pointer"
           onClick={onClick}
         >
           {findActive ? (
             <>
-              <IoClose className="text-3xl" />
+              <IoClose className="text-2xl" />
             </>
           ) : (
             <>
               <p>Search</p>
-              <IoSearch className="text-3xl" />
+              <IoSearch className="text-2xl" />
             </>
           )}
         </div>

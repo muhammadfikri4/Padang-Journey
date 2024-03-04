@@ -19,7 +19,7 @@ const FindWisata = ({ data, findWisata, wisata, setData }) => {
           autoFocus
         />
       </div>
-      <div className="flex flex-col gap-5 mt-5">
+      <div className="flex flex-col gap-5 mt-5 pb-3">
         {data.length > 0 ? (
           data.map((item, i) => (
             <Link
