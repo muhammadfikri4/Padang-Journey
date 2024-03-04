@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa6";
-import "./SliderDestination.css";
+import "./SliderTraveling.css";
 
-export default function SliderDestination() {
+export default function SliderTraveling() {
   const [viewCard, setViewCard] = useState(5);
   const [widthCard, setWidthCard] = useState(0);
   const [scrollAmount, setScrollAmount] = useState(0);
@@ -13,17 +13,17 @@ export default function SliderDestination() {
   const [visibleButtonCloseSlider, setVisibleButtonCloseSlider] = useState(false);
 
   useEffect(() => {
-    const sliderTrack = document.querySelector(".destination .slider-track");
+    const sliderTrack = document.querySelector(".traveling .slider-track");
     const gapSliderTrack = parseFloat(getComputedStyle(sliderTrack).gap);
 
     const sliderContainer = document.querySelector(
-      ".destination .slider-container"
+      ".traveling .slider-container"
     );
-    const sliderList = document.querySelector(".destination .slider-list");
-    const cardSliders = document.querySelectorAll(".destination .card-slider");
+    const sliderList = document.querySelector(".traveling .slider-list");
+    const cardSliders = document.querySelectorAll(".traveling .card-slider");
 
     setLengthListSlider(
-      document.querySelectorAll(".destination .slider-track > div").length
+      document.querySelectorAll(".traveling .slider-track > div").length
     );
 
     function cardResponsive() {
@@ -84,18 +84,18 @@ export default function SliderDestination() {
         newDataCurrentSlide = newViewCard * newIndexSlide;
         setDataCurrentSlide(newDataCurrentSlide);
       }
-      const prevButton = document.querySelector(".destination .slick-prev");
-      const nextButton = document.querySelector(".destination .slick-next");
+      const prevButton = document.querySelector(".traveling .slick-prev");
+      const nextButton = document.querySelector(".traveling .slick-next");
       if (newDataCurrentSlide == 0) {
         prevButton.classList.add("slick-disabled");
-        const heroSlider = document.querySelector(".destination .hero-slider");
+        const heroSlider = document.querySelector(".traveling .hero-slider");
         if(heroSlider.classList.contains("slider-ready")){
           setVisibleButtonCloseSlider(true);
         };
       }
       nextButton.setAttribute("data-current-slide", newDataCurrentSlide);
       prevButton.setAttribute("data-current-slide", newDataCurrentSlide);
-      sliderList.style.transform = `translateX(-${
+      sliderList.style.transform = `translateX(${
         newIndexSlide * newScrollAmount
       }px)`;
     }
@@ -118,14 +118,14 @@ export default function SliderDestination() {
   const triggerSlider = () => {
     setVisibleButtonTriggerSlider(false);
     setVisibleButtonCloseSlider(true);
-    const heroSlider = document.querySelector(".destination .hero-slider");
+    const heroSlider = document.querySelector(".traveling .hero-slider");
     heroSlider.classList.add("slider-ready");
   };
 
   const closeSlider = () => {
     setVisibleButtonCloseSlider(false);
     setVisibleButtonTriggerSlider(true);
-    const heroSlider = document.querySelector(".destination .hero-slider");
+    const heroSlider = document.querySelector(".traveling .hero-slider");
     heroSlider.classList.remove("slider-ready");
   };
 
@@ -137,16 +137,16 @@ export default function SliderDestination() {
       return;
     }
     if (newDataCurrentSlide === 0) {
-      const prevButton = document.querySelector(".destination .slick-prev");
+      const prevButton = document.querySelector(".traveling .slick-prev");
       prevButton.classList.add("slick-disabled");
       setVisibleButtonCloseSlider(true);
     }
     setIndexSlide(indexSlide - 1);
-    const sliderList = document.querySelector(".destination .slider-list");
-    sliderList.style.transform = `translateX(-${indexSlide * scrollAmount}px)`;
-    const nextButton = document.querySelector(".destination .slick-next");
+    const sliderList = document.querySelector(".traveling .slider-list");
+    sliderList.style.transform = `translateX(${indexSlide * scrollAmount}px)`;
+    const nextButton = document.querySelector(".traveling .slick-next");
     nextButton.setAttribute("data-current-slide", newDataCurrentSlide);
-    const prevButton = document.querySelector(".destination .slick-prev");
+    const prevButton = document.querySelector(".traveling .slick-prev");
     prevButton.setAttribute("data-current-slide", newDataCurrentSlide);
   };
 
@@ -157,54 +157,57 @@ export default function SliderDestination() {
     }
     setDataCurrentSlide(newDataCurrentSlide);
     if (newDataCurrentSlide === viewCard) {
-      const prevButton = document.querySelector(".destination .slick-prev");
+      const prevButton = document.querySelector(".traveling .slick-prev");
       prevButton.classList.remove("slick-disabled");
       setVisibleButtonCloseSlider(false);
     }
     console.log(newDataCurrentSlide);
     setIndexSlide(indexSlide + 1);
-    const sliderList = document.querySelector(".destination .slider-list");
-    sliderList.style.transform = `translateX(-${indexSlide * scrollAmount}px)`;
-    const nextButton = document.querySelector(".destination .slick-next");
+    const sliderList = document.querySelector(".traveling .slider-list");
+    sliderList.style.transform = `translateX(${indexSlide * scrollAmount}px)`;
+    const nextButton = document.querySelector(".traveling .slick-next");
     nextButton.setAttribute("data-current-slide", newDataCurrentSlide);
-    const prevButton = document.querySelector(".destination .slick-prev");
+    const prevButton = document.querySelector(".traveling .slick-prev");
     prevButton.setAttribute("data-current-slide", newDataCurrentSlide);
   };
 
   return (
-    <div className="destination bg-black flex py-10 justify-center overflow-hidden items-center">
-      <div className="relative h-full w-full bg-fixed bg-cover bg-bottom transition-all ease-in-out duration-500 ms-8 sm:ms-16 hero-slider">
-        <div className="w-[45%] ps-6 lg:ps-16 delay-100 duration-700 z-30 absolute h-full caption-slider flex flex-col justify-center">
-          <div>
+    <div className="traveling bg-black flex py-10 justify-center overflow-hidden items-center">
+      <div className="relative h-full w-full bg-fixed bg-cover bg-bottom transition-all ease-in-out duration-500 me-8 sm:me-16 hero-slider">
+        <div className="w-[45%] right-0 pe-6 lg:pe-16 delay-100 duration-700 z-30 absolute h-full caption-slider flex flex-col items-end justify-center">
+          <div className="text-right">
             <h1 className="text-2xl md:text-4xl lg:text-5xl text-white font-bold">
-              All Destination
+              All Traveling
             </h1>
             <button className="text-[10px] md:text-sm lg:text-base text-white border border-white py-2 px-4 rounded mt-4 hover:bg-white hover:text-black">
               See All
             </button>
           </div>
         </div>
-        <div className="opacity-0 transform translate-x-30 transition-all ease-in-out duration-500 delay-100 absolute top-3 z-20 header-slider">
+        <div className="opacity-0 right-0 transform translate-x-30 transition-all ease-in-out duration-500 delay-100 absolute top-3 z-20 header-slider">
           <h1 className="text-xl text-white font-bold px-12">
-            All Destination
+            All Traveling
           </h1>
         </div>
         <div className="my-14 max-h-[400px] slider-container select-none z-20 relative">
-          {visibleButtonCloseSlider && (
-            <button className="btn-slider left-0 close-slider" onClick={closeSlider}>
-            <FaChevronLeft />
-          </button>
-          )}
-          <div className="absolute w-screen slider duration-700 delay-200 left-[40%] h-full">
+        {visibleButtonTriggerSlider && (
             <button
-              data-current-slide="0"
-              className="btn-slider left-0 slick-prev slick-disabled"
-              onClick={prevButton}
+              className="btn-slider left-0 trigger-slider"
+              onClick={triggerSlider}
             >
-              <FaChevronLeft />
+              <FaChevronLeft/>
             </button>
-            <div className="slider-list mx-[63px] duration-700 absolute left-0 h-full w-full">
-              <div className="flex items-stretch gap-3 min-w-max absolute left-0 h-full slider-track">
+          )}
+          <div className="absolute w-screen slider duration-700 delay-200 right-[40%] h-full">
+          <button
+              data-current-slide="0"
+              className="btn-slider left-0 slick-next"
+              onClick={nextButton}
+            >
+              <FaChevronLeft/>
+            </button>
+            <div className="slider-list mx-[63px] duration-700 right-0 absolute h-full w-full">
+              <div className="flex flex-row-reverse absolute right-0 items-stretch gap-3 min-w-max h-full slider-track">
                 <div className="card-slider">
                   <div className="bg-white h-full rounded-[50px] cursor-pointer overflow-hidden relative">
                     <img
@@ -214,7 +217,7 @@ export default function SliderDestination() {
                     />
                     <div className="absolute bottom-5 left-6 right-6">
                       <p className="sm:text-xl text-white font-bold">
-                        New York New York New York1
+                        New York New York New York4
                       </p>
                     </div>
                   </div>
@@ -228,7 +231,7 @@ export default function SliderDestination() {
                     />
                     <div className="absolute bottom-5 left-6 right-6">
                       <p className="sm:text-xl text-white font-bold">
-                        New York New York New York1
+                        New York New York New York4
                       </p>
                     </div>
                   </div>
@@ -242,7 +245,7 @@ export default function SliderDestination() {
                     />
                     <div className="absolute bottom-5 left-6 right-6">
                       <p className="sm:text-xl text-white font-bold">
-                        New York New York New York1
+                        New York New York New York4
                       </p>
                     </div>
                   </div>
@@ -256,7 +259,7 @@ export default function SliderDestination() {
                     />
                     <div className="absolute bottom-5 left-6 right-6">
                       <p className="sm:text-xl text-white font-bold">
-                        New York New York New York1
+                        New York New York New York4
                       </p>
                     </div>
                   </div>
@@ -270,7 +273,7 @@ export default function SliderDestination() {
                     />
                     <div className="absolute bottom-5 left-6 right-6">
                       <p className="sm:text-xl text-white font-bold">
-                        New York New York New York1
+                        New York New York New York4
                       </p>
                     </div>
                   </div>
@@ -284,7 +287,7 @@ export default function SliderDestination() {
                     />
                     <div className="absolute bottom-5 left-6 right-6">
                       <p className="sm:text-xl text-white font-bold">
-                        New York New York New York1
+                        New York New York New York4
                       </p>
                     </div>
                   </div>
@@ -298,28 +301,26 @@ export default function SliderDestination() {
                     />
                     <div className="absolute bottom-5 left-6 right-6">
                       <p className="sm:text-xl text-white font-bold">
-                        New York New York New York1
+                        New York New York New York4
                       </p>
                     </div>
                   </div>
                 </div>
+
               </div>
             </div>
             <button
               data-current-slide="0"
-              className="btn-slider right-0 slick-next"
-              onClick={nextButton}
+              className="btn-slider right-0 slick-prev slick-disabled"
+              onClick={prevButton}
             >
               <FaChevronRight/>
             </button>
           </div>
-          {visibleButtonTriggerSlider && (
-            <button
-              className="btn-slider right-0 trigger-slider"
-              onClick={triggerSlider}
-            >
-              <FaChevronRight/>
-            </button>
+          {visibleButtonCloseSlider && (
+            <button className="btn-slider right-0 close-slider" onClick={closeSlider}>
+            <FaChevronRight/>
+          </button>
           )}
         </div>
       </div>

@@ -1,10 +1,10 @@
-.destination .hero-slider {
+.traveling .hero-slider {
   background-image: url("https://cdn.goturkiye.com/goturkiye/bg-1.jpg");
-  border-top-left-radius: 100px;
-  border-bottom-left-radius: 100px;
+  border-top-right-radius: 100px;
+  border-bottom-right-radius: 100px;
 }
 
-.destination .hero-slider::after {
+.traveling .hero-slider::after {
   content: "";
   position: absolute;
   width: 100%;
@@ -13,12 +13,12 @@
   left: 0;
   background: linear-gradient(
     262deg,
-    rgba(0, 0, 0, 1) 25%,
-    rgba(0, 0, 0, 0) 100%
+    rgba(0, 0, 0, 0) 10%,
+    rgba(0, 0, 0, 1) 80%
   );
   pointer-events: none;
 }
-.destination .hero-slider::before {
+.traveling .hero-slider::before {
   content: "";
   position: absolute;
   left: 0;
@@ -27,22 +27,22 @@
   pointer-events: none;
   background-color: rgba(0, 0, 0, 0.25);
 }
-.destination .hero-slider.slider-ready {
-  margin-left: 0 !important;
+.traveling .hero-slider.slider-ready {
+  margin-right: 0 !important;
   border-radius: 0 !important;
 }
-.destination .hero-slider.slider-ready .caption-slider {
+.traveling .hero-slider.slider-ready .caption-slider {
   opacity: 0;
   z-index: 0;
 }
-.destination .slider-ready .header-slider {
+.traveling .slider-ready .header-slider {
   opacity: 1;
   transform: translateX(0);
 }
-.destination .slider-ready .slider {
-  left: 0;
+.traveling .slider-ready .slider {
+  right: 0;
 }
-.destination .slider-container .btn-slider {
+.traveling .slider-container .btn-slider {
   top: 0;
   width: 3.5rem;
   color: #fff;
@@ -56,9 +56,7 @@
   height: 100%;
   z-index: 30;
   position: absolute;
-  display: flex;
-  justify-content: center;
 }
-.destination .slick-disabled {
-  display: none !important;
+.traveling .slick-disabled {
+  display: none;
 }
