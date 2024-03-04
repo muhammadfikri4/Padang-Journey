@@ -20,18 +20,31 @@ const Navbar = ({ navActive, setNavActive }) => {
     if (window.scrollY > 0) {
       return setIsScroll(true);
     } else {
+      if(window.innerWidth >= 540){
+        setActive(false)
+      }
       return setIsScroll(false);
+
     }
   };
+
+  useEffect(() => {
+    window.addEventListener("resize", listenScrollEvent);
+
+    return () => window.removeEventListener("resize", listenScrollEvent);
+  }, []);
+
   useEffect(() => {
     window.addEventListener("scroll", listenScrollEvent);
 
     return () => window.removeEventListener("scroll", listenScrollEvent);
   }, []);
   return (
-    <>
+
       <nav
-        className={`fixed duration-300 flex items-center justify-between -top-1 right-0 left-0 px-7 z-[99] ${
+        className={`fixed top-0 right-0 left-0 z-[9999]`}
+      >
+        <div className={`duration-300 flex items-center justify-between px-7 ${
           isScroll || active
             ? "shadow-[0_-4px_15px_0_rgba(0,0,0,0.75)] py-5"
             : `shadow-none py-7`
@@ -45,11 +58,8 @@ const Navbar = ({ navActive, setNavActive }) => {
                 location.pathname == "/kuliner"))
               ? "white"
               : `rgba(0,0,0,.1)`,
-        }}
-      >
-        {/* <div className="flex justify-between items-center">
+        }}>
         
-      </div> */}
         <Link
           to="/"
           className={`font-bold text-xl ${
@@ -154,11 +164,11 @@ const Navbar = ({ navActive, setNavActive }) => {
             </>
           )}
         </div>
-      </nav>
+      </div>
       <div
-        className={`fixed ${
+        className={`absolute ${
           active ? "translate-y-0" : "-translate-y-[1000px]"
-        } duration-300 z-[98] sm:hidden flex flex-col top-0 right-0 left-0 bottom-0 py-32 gap-8 list-none bg-white font-[Metropolis]`}
+        } duration-300 z-[-1] sm:hidden flex flex-col top-[100%] right-0 left-0 bottom-0 justify-between min-h-max list-none bg-white font-[Metropolis]`}
       >
         <Link to={`/`} onClick={() => setActive(!active)}>
           <p className="hover:bg-gray-100 px-5 py-3">Beranda</p>
@@ -176,7 +186,8 @@ const Navbar = ({ navActive, setNavActive }) => {
           <p className="hover:bg-gray-100 px-5 py-3">Tentang</p>
         </Link>
       </div>
-    </>
+      </nav>
+
   );
 };
 
