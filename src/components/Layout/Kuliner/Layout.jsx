@@ -26,7 +26,7 @@ const Layout = () => {
     return result;
   };
   useEffect(() => {
-    setLiked(JSON.parse(localStorage.getItem("like-kuliner")));
+    setLiked(JSON.parse(localStorage.getItem("like-kuliner")) || []);
   }, [isLiked]);
 
   return (

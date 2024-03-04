@@ -16,7 +16,7 @@ const FamousWisata = ({ wisata }) => {
     return result;
   };
   useEffect(() => {
-    setLiked(JSON.parse(localStorage.getItem("like-wisata")));
+    setLiked(JSON.parse(localStorage.getItem("like-wisata")) || []);
   }, [isLiked]);
 
   return (
