@@ -234,7 +234,7 @@ export default function SliderDestination() {
             </button>
             <div className="slider-list mx-[63px] duration-700 absolute left-0 h-full w-full">
               <div className="flex items-stretch gap-3 min-w-max absolute left-0 h-full slider-track">
-                {wisata.slice.map((item, i) => (
+                {wisata.map((item, i) => (
                   <div className="card-slider relative overflow-hidden" key={i}>
                     <div className="bg-white h-full rounded-[50px] cursor-pointer overflow-hidden relative">
                       <img
