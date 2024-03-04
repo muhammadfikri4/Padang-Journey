@@ -1,5 +1,5 @@
 import React from "react";
-import { LikeKuliner } from "../../../utils/Function/Like";
+import { Like, LikeKuliner } from "../../../utils/Function/Like";
 import { IoMdHeart } from "react-icons/io";
 import { Link } from "react-router-dom";
 import { Card, CardBody, Typography } from "@material-tailwind/react";
