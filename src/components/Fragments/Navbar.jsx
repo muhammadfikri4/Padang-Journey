@@ -95,35 +95,7 @@ const Navbar = ({ navActive, setNavActive }) => {
           <div
             className="flex justify-center items-center"
             onClick={() => setIsChecked(!isChecked)}
-          >
-            {/* <FaCloudMoon className="text-4xl text-black" /> */}
-
-            {/* <div className="flex items-center justify-center">
-              {isChecked ? (
-                <>
-                  <IoPartlySunnySharp
-                    className={`text-2xl ${
-                      active ||
-                      isScroll ||
-                      (findActive &&
-                        (location.pathname == "/wisata" ||
-                          location.pathname == "/kuliner"))
-                        ? "text-black"
-                        : "text-white"
-                    }`}
-                  />
-                </>
-              ) : (
-                <>
-                  <FaCloudMoon
-                    className={`text-2xl ${
-                      active || isScroll ? "text-black" : "text-white"
-                    }`}
-                  />
-                </>
-              )}
-            </div> */}
-          </div>
+          ></div>
           {active ? (
             <IoClose
               className={`sm:hidden inline-block cursor-pointer text-3xl ${
@@ -186,22 +158,22 @@ const Navbar = ({ navActive, setNavActive }) => {
       <div
         className={`fixed ${
           active ? "translate-y-0" : "-translate-y-[1000px]"
-        } duration-300 z-[9] sm:hidden flex flex-col top-0 right-0 left-0 bottom-0 py-5 px-5 justify-center gap-12 list-none bg-white`}
+        } duration-300 z-[9] sm:hidden flex flex-col top-0 right-0 left-0 bottom-0 py-5 justify-center gap-12 list-none bg-white font-[Metropolis]`}
       >
         <Link to={`/`} onClick={() => setActive(!active)}>
-          Beranda
+          <p className="hover:bg-gray-100 px-5 py-3">Beranda</p>
         </Link>
         <Link to={`/wisata`} onClick={() => setActive(!active)}>
-          Wisata
+          <p className="hover:bg-gray-100 px-5 py-3">Wisata</p>
         </Link>
         <Link to={`/kuliner`} onClick={() => setActive(!active)}>
-          Kuliner
+          <p className="hover:bg-gray-100 px-5 py-3">Kuliner</p>
         </Link>
         <Link to={`/favorit`} onClick={() => setActive(!active)}>
-          Favorit
+          <p className="hover:bg-gray-100 px-5 py-3">Favorit</p>
         </Link>
         <Link to={`/tentang`} onClick={() => setActive(!active)}>
-          Tentang
+          <p className="hover:bg-gray-100 px-5 py-3">Tentang</p>
         </Link>
       </div>
     </>

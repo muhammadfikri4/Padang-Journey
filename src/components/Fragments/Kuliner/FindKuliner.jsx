@@ -24,7 +24,7 @@ const FindKuliner = ({ data, findKuliner, kuliner, setData }) => {
         {data.length > 0 ? (
           data.map((item) => (
             <Link
-              to={`/wisata/${item.id}`}
+              to={`/kuliner/${item.id}`}
               className="w-screen px-5 flex gap-5"
             >
               <img

@@ -12,7 +12,7 @@ const KulinerFavorit = ({ kuliner, checkLiked, setIsLiked }) => {
           Kuliner Favorit Khas Padang
         </h1>
         <div className="grid md:grid-cols-4 sm:grid-cols-2 grid-cols-1 justify-items-center relative overflow-hidden py-10 sm:gap-2 gap-5 sm:md:px-0 sm:px-5 px-3">
-          {kuliner.map((item, i) => (
+          {kuliner.slice(0, 4).map((item, i) => (
             <motion.div
               initial={{ transform: "scale(0)" }}
               whileInView={{ transform: "scale(1)" }}

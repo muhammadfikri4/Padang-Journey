@@ -5,18 +5,38 @@
         "deskripsi": "Rendang (Minangkabau: randang; Jawi: رندڠ) adalah hidangan berbahan dasar daging yang dihasilkan dari proses memasak suhu rendah dalam waktu lama dengan menggunakan aneka rempah-rempah dan santan. Masakan ini populer di Indonesia dan negara-negara Asia Tenggara lainnya, seperti Malaysia, Singapura, Brunei, Filipina, dan Thailand. Di daerah asalnya, Minangkabau, rendang disajikan di berbagai upacara adat dan perhelatan istimewa.",
         "imageUrl": "https://firebasestorage.googleapis.com/v0/b/pariwisata-d318c.appspot.com/o/Rendang.webp?alt=media&token=e004b23c-a999-4000-8a90-ff12bbb8da58",
         "ulasan": {
-            "luarBiasa": 50,
-            "sangatBagus": 30,
-            "biasa": 10,
-            "buruk": 5,
-            "sangatBuruk": 3
+            "luarBiasa": 70,
+            "sangatBagus": 40,
+            "biasa": 5,
+            "buruk": 2,
+            "sangatBuruk": 1
         },
         "restaurantImage": "https://firebasestorage.googleapis.com/v0/b/pariwisata-d318c.appspot.com/o/RMPagiSore.jpg?alt=media&token=7cf1b24a-fc28-4b3e-8a1c-4252f98438a4",
         "gallery": [
             "https://firebasestorage.googleapis.com/v0/b/pariwisata-d318c.appspot.com/o/Rendang2.jpg?alt=media&token=dad0fe97-6cb0-4c39-9651-78219039df31",
             "https://firebasestorage.googleapis.com/v0/b/pariwisata-d318c.appspot.com/o/Rendang3.jpg?alt=media&token=04eb063f-3a35-486b-b45f-62b0560ca8a0",
             "https://firebasestorage.googleapis.com/v0/b/pariwisata-d318c.appspot.com/o/Rendang4.jpg?alt=media&token=78ef8e05-fca2-4fa8-906b-fc7fea2895f0"
-        ]
+        ],
+        "testimoni": [
+            {
+            "nama": "Anonymous",
+            "fotoProfil": "https://firebasestorage.googleapis.com/v0/b/pariwisata-d318c.appspot.com/o/Profile.svg?alt=media&token=4b711a9c-828f-4c39-8ccb-4fa9326f6ad7",
+            "rating": 5,
+            "komen": "Rasanya sungguh luar biasa! Baru saja selesai menikmati rendang di restoran ini, dan saya benar-benar terkesan. Dagingnya begitu lembut dan bumbu rempahnya begitu meresap ke dalam setiap gigitan. Pengalaman makan yang memuaskan!"
+        },
+            {
+            "nama": "Anonymous",
+            "fotoProfil": "https://firebasestorage.googleapis.com/v0/b/pariwisata-d318c.appspot.com/o/Profile.svg?alt=media&token=4b711a9c-828f-4c39-8ccb-4fa9326f6ad7",
+            "rating": 5,
+            "komen": "Rendang di restoran ini sungguh luar biasa. Saya suka bagaimana dagingnya dimasak sempurna dan bumbunya begitu kaya rasa. Pasti akan kembali lagi untuk menikmati hidangan ini!"
+        },
+            {
+            "nama": "Anonymous",
+            "fotoProfil": "https://firebasestorage.googleapis.com/v0/b/pariwisata-d318c.appspot.com/o/Profile.svg?alt=media&token=4b711a9c-828f-4c39-8ccb-4fa9326f6ad7",
+            "rating": 5,
+            "komen": "Tadi baru saja mencoba rendang di restoran ini dan rasanya benar-benar mengagumkan! Dagingnya begitu lembut dan bumbu rempahnya begitu enak. Tak sabar untuk kembali dan mencicipi hidangan lainnya di sini!"
+        }
+    ]
     },
     {
         "id": 201,
@@ -33,19 +53,19 @@
         "testimoni": [
             {
             "nama": "Anonymous",
-            "fotoProfil": "https://firebasestorage.googleapis.com/v0/b/pariwisata-d318c.appspot.com/o/customer1.svg?alt=media&token=2c86e419-7c7e-40b5-9780-c0ac83ffa656",
+            "fotoProfil": "https://firebasestorage.googleapis.com/v0/b/pariwisata-d318c.appspot.com/o/Profile.svg?alt=media&token=4b711a9c-828f-4c39-8ccb-4fa9326f6ad7",
             "rating": 5,
             "komen": "Wow, baru saja selesai menikmati sate Padang di restoran ini, dan rasanya benar-benar luar biasa! Dagingnya sangat empuk dan bumbu kacangnya begitu kaya rempah. Sungguh pengalaman makan yang memuaskan!"
         },
             {
             "nama": "Anonymous",
-            "fotoProfil": "https://firebasestorage.googleapis.com/v0/b/pariwisata-d318c.appspot.com/o/customer1.svg?alt=media&token=2c86e419-7c7e-40b5-9780-c0ac83ffa656",
+            "fotoProfil": "https://firebasestorage.googleapis.com/v0/b/pariwisata-d318c.appspot.com/o/Profile.svg?alt=media&token=4b711a9c-828f-4c39-8ccb-4fa9326f6ad7",
             "rating": 4,
             "komen": "Sate Padang di restoran ini sungguh tak tertandingi. Saya suka bagaimana dagingnya disajikan dengan sempurna dan bumbu kacangnya begitu lezat. Pasti akan kembali lagi untuk menikmatinya!"
         },
             {
             "nama": "Anonymous",
-            "fotoProfil": "https://firebasestorage.googleapis.com/v0/b/pariwisata-d318c.appspot.com/o/customer1.svg?alt=media&token=2c86e419-7c7e-40b5-9780-c0ac83ffa656",
+            "fotoProfil": "https://firebasestorage.googleapis.com/v0/b/pariwisata-d318c.appspot.com/o/Profile.svg?alt=media&token=4b711a9c-828f-4c39-8ccb-4fa9326f6ad7",
             "rating": 4,
             "komen": "Hari ini saya mencoba sate Padang di restoran ini dan rasanya sungguh menggugah selera! Dagingnya begitu gurih dan bumbu kacangnya begitu mantap. Tidak sabar untuk kembali mencicipi hidangan lainnya di sini!"
         }
@@ -67,12 +87,33 @@
             "sangatBuruk": 5
         },
         
-        "restaurantImage":"https://firebasestorage.googleapis.com/v0/b/pariwisata-d318c.appspot.com/o/RmPauhPiaman.jpg?alt=media&token=bb1c6c36-c816-483c-9fd1-3ffa6af27445",
+        "restaurantImage":"https://firebasestorage.googleapis.com/v0/b/pariwisata-d318c.appspot.com/o/RMPayakumbuah.webp?alt=media&token=b2d11bb0-4089-4e7f-890a-938a3db86c2f",
         "gallery": [
             "https://firebasestorage.googleapis.com/v0/b/pariwisata-d318c.appspot.com/o/gulai2.jpg?alt=media&token=06749a7a-c017-44e8-8505-c01dbcb1d34c",
             "https://firebasestorage.googleapis.com/v0/b/pariwisata-d318c.appspot.com/o/gulai3.webp?alt=media&token=272bd919-a2b7-46b0-990f-e8be9552c78e",
             "https://firebasestorage.googleapis.com/v0/b/pariwisata-d318c.appspot.com/o/gulai4.jpg?alt=media&token=5dd7a270-c552-4a7f-a492-5b08a0097876"
-        ]
+        ],
+        "testimoni": [
+            {
+            "nama": "Anonymous",
+            "fotoProfil": "https://firebasestorage.googleapis.com/v0/b/pariwisata-d318c.appspot.com/o/Profile.svg?alt=media&token=4b711a9c-828f-4c39-8ccb-4fa9326f6ad7",
+            "rating": 4,
+            "komen": "Saya baru saja mencoba gulai ayam di restoran ini, namun saya merasa sedikit kecewa. Daging ayamnya terlalu keras dan kuah gulainya terlalu kental. Mungkin restoran ini perlu memperbaiki kualitas masakannya."
+        },
+            {
+            "nama": "Anonymous",
+            "fotoProfil": "https://firebasestorage.googleapis.com/v0/b/pariwisata-d318c.appspot.com/o/Profile.svg?alt=media&token=4b711a9c-828f-4c39-8ccb-4fa9326f6ad7",
+            "rating": 5,
+            "komen": "Saya mencoba gulai ayam di restoran ini dan rasanya benar-benar menggugah selera! Daging ayamnya sangat lembut dan bumbu gulainya sungguh enak. Tak sabar untuk kembali dan mencicipi hidangan lainnya di sini!"
+        },
+            {
+            "nama": "Anonymous",
+            "fotoProfil": "https://firebasestorage.googleapis.com/v0/b/pariwisata-d318c.appspot.com/o/Profile.svg?alt=media&token=4b711a9c-828f-4c39-8ccb-4fa9326f6ad7",
+            "rating": 1,
+            "komen": "Saya mencoba gulai ayam di restoran ini, tetapi saya merasa agak kecewa. Meskipun bumbunya cukup enak, tapi daging ayamnya terlalu sedikit dan harganya terlalu mahal untuk porsi yang kecil seperti itu."
+        }
+    ]
+        
     },
     {
         "id": 203,
@@ -86,12 +127,71 @@
             "buruk": 15,
             "sangatBuruk": 5
         },
-        "restaurantImage":"https://firebasestorage.googleapis.com/v0/b/pariwisata-d318c.appspot.com/o/RmPauhPiaman.jpg?alt=media&token=bb1c6c36-c816-483c-9fd1-3ffa6af27445",
+        "restaurantImage":"https://firebasestorage.googleapis.com/v0/b/pariwisata-d318c.appspot.com/o/RmPauhPiaman.jpg?alt=media&token=1d0b2834-97b0-475e-9816-3055e267b6a0",
         "gallery": [
             "https://firebasestorage.googleapis.com/v0/b/pariwisata-d318c.appspot.com/o/DendengBalado2.jpg?alt=media&token=9d6878da-8fc3-46c1-a28e-9ed64519bcea",
             "https://firebasestorage.googleapis.com/v0/b/pariwisata-d318c.appspot.com/o/DendengBalado3.webp?alt=media&token=796f88e1-5aa2-4dd3-8052-2a7d6a9078d8",
             "https://firebasestorage.googleapis.com/v0/b/pariwisata-d318c.appspot.com/o/DendengBalado4.jpg?alt=media&token=6c076ed8-5d00-4e5d-acf3-de5e41913c98"
-        ]
+        ],
+        "testimoni": [
+            {
+            "nama": "Anonymous",
+            "fotoProfil": "https://firebasestorage.googleapis.com/v0/b/pariwisata-d318c.appspot.com/o/Profile.svg?alt=media&token=4b711a9c-828f-4c39-8ccb-4fa9326f6ad7",
+            "rating": 5,
+            "komen": "Dendeng balado di restoran ini sungguh luar biasa! Rasanya begitu lezat dengan kombinasi pedas dan manis yang sempurna. Dagingnya juga sangat empuk. Sungguh hidangan yang saya rekomendasikan!"
+        },
+            {
+            "nama": "Anonymous",
+            "fotoProfil": "https://firebasestorage.googleapis.com/v0/b/pariwisata-d318c.appspot.com/o/Profile.svg?alt=media&token=4b711a9c-828f-4c39-8ccb-4fa9326f6ad7",
+            "rating": 2,
+            "komen": "Dendeng balado di sini cukup biasa saja menurut saya. Bumbunya tidak terlalu berbeda dengan yang saya buat di rumah dan dagingnya agak keras. Saya harap restoran ini bisa meningkatkan kualitas masakannya."
+        },
+            {
+            "nama": "Anonymous",
+            "fotoProfil": "https://firebasestorage.googleapis.com/v0/b/pariwisata-d318c.appspot.com/o/Profile.svg?alt=media&token=4b711a9c-828f-4c39-8ccb-4fa9326f6ad7",
+            "rating": 4,
+            "komen": "Saya sangat menikmati dendeng balado di restoran ini. Bumbunya begitu meresap dan membuat lidah saya bergoyang! Dagingnya juga cukup tipis dan gurih. Saya pasti akan datang kembali untuk menikmati lagi."
+        }
+    ]
+    },
+    {
+        "id": 204,
+        "nama": "Lamang Tapai",
+        "deskripsi": "Lamang tapai adalah makanan ringan yang berasal dari Sumatera Barat, Indonesia. Rasanya manis, enak dan ada sedikit rasa fermentasi di dalamnya. Biasanya lamang tapai banyak dijumpai pada Idul Fitri, pernikahan, pesta adat atau acara khitanan.",
+        "imageUrl": "https://firebasestorage.googleapis.com/v0/b/pariwisata-d318c.appspot.com/o/LamangTapai2.jpg?alt=media&token=f2ba1e91-05e1-431e-a567-5a3b8f1a81a0",
+        "ulasan": {
+            "luarBiasa": 37,
+            "sangatBagus": 20,
+            "biasa": 23,
+            "buruk": 15,
+            "sangatBuruk": 5
+        },
+        "restaurantImage":"https://firebasestorage.googleapis.com/v0/b/pariwisata-d318c.appspot.com/o/RMPicalSikai.webp?alt=media&token=9c20871f-1a80-40e2-bed2-f4cb84491429",
+        "gallery": [
+            "https://firebasestorage.googleapis.com/v0/b/pariwisata-d318c.appspot.com/o/LamangTapai.jpg?alt=media&token=350f174d-8ca5-4dad-9966-34ed3d151e0b",
+            "https://firebasestorage.googleapis.com/v0/b/pariwisata-d318c.appspot.com/o/LamangTapai3.avif?alt=media&token=be9aa1bd-cf48-4fb9-a59a-52dc72a57587",
+            "https://firebasestorage.googleapis.com/v0/b/pariwisata-d318c.appspot.com/o/LamangTapai4.jpg?alt=media&token=4be9cc8d-3b37-449a-beba-eda8dad1ee03"
+        ],
+        "testimoni": [
+            {
+            "nama": "Anonymous",
+            "fotoProfil": "https://firebasestorage.googleapis.com/v0/b/pariwisata-d318c.appspot.com/o/Profile.svg?alt=media&token=4b711a9c-828f-4c39-8ccb-4fa9326f6ad7",
+            "rating": 5,
+            "komen": "Saya benar-benar terkesan dengan lamang tapai di restoran ini. Teksturnya yang lembut dan rasa manisnya begitu sempurna. Ini adalah salah satu hidangan penutup terbaik yang pernah saya coba!"
+        },
+            {
+            "nama": "Anonymous",
+            "fotoProfil": "https://firebasestorage.googleapis.com/v0/b/pariwisata-d318c.appspot.com/o/Profile.svg?alt=media&token=4b711a9c-828f-4c39-8ccb-4fa9326f6ad7",
+            "rating": 5,
+            "komen": "Lamang tapai di restoran ini teksturnya terlalu kenyal dan rasanya terlalu manis bagi selera saya. Saya harap restoran ini dapat memperbaiki kualitas masakannya"
+        },
+            {
+            "nama": "Anonymous",
+            "fotoProfil": "https://firebasestorage.googleapis.com/v0/b/pariwisata-d318c.appspot.com/o/Profile.svg?alt=media&token=4b711a9c-828f-4c39-8ccb-4fa9326f6ad7",
+            "rating": 2,
+            "komen": "Saya benar-benar terkesan dengan lamang tapai di restoran ini. Teksturnya yang lembut dan rasa manisnya begitu sempurna. Ini adalah salah satu hidangan penutup terbaik yang pernah saya coba!"
+        }
+    ]
     }
     
 ]

@@ -14,9 +14,9 @@ import FindKuliner from "../../Fragments/Kuliner/FindKuliner";
 import { findKuliner } from "../../../utils/Function/Find";
 
 const Layout = () => {
+  const { findActive, setFindActive } = useStore();
   const [isLiked, setIsLiked] = useState(false);
   const [data, setData] = useState(kuliner);
-  const { findActive, setFindActive } = useStore();
   const liked = JSON.parse(localStorage.getItem("like-kuliner")) || [];
   const checkLiked = (id) => {
     const result = liked.find((item) => item.id == id);

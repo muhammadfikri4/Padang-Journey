@@ -3,10 +3,13 @@ import { LikeKuliner } from "../../../utils/Function/Like";
 import { IoMdHeartEmpty } from "react-icons/io";
 import { IoMdHeart } from "react-icons/io";
 
-const LikeButton = ({ checkLiked, setIsLiked, data }) => {
+const LikeButton = ({ checkLiked, setIsLiked, data, bg, bot }) => {
   return (
     <div
-      className="bg-white p-2 rounded-bl-xl cursor-pointer z-5"
+      className={`p-2 ${
+        bot ? "rounded-lg" : "rounded-bl-xl"
+      } cursor-pointer z-5`}
+      style={{ backgroundColor: bg || "white" }}
       onClick={() => LikeKuliner({ data, setIsLiked })}
     >
       {checkLiked(data.id) ? (
