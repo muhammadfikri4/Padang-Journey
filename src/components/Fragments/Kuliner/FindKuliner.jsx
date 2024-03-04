@@ -17,7 +17,6 @@ const FindKuliner = ({ data, findKuliner, kuliner, setData }) => {
           className="w-screen bg-[#e7ffdd] mt-28 text-xl px-5 py-2 outline-none rounded-md placeholder:font-[Montserrat] placeholder:text-base"
           placeholder="Cari Wisata"
           onChange={(e) => findKuliner(e, { kuliner, setData })}
-          autoFocus
         />
       </div>
       <div className="flex flex-col gap-5 pb-3 mt-5">
