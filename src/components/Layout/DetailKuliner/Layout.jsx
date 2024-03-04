@@ -11,9 +11,9 @@ import Testimoni from "../../Fragments/DetailKuliner/Testimoni";
 import kuliner from "../../../utils/Kuliner.json";
 import Review from "../../Fragments/DetailKuliner/Review";
 const Layout = ({ data }) => {
-  // useEffect(() => {
-  //   window.scrollTo(0, 0);
-  // }, [data]);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [data]);
   return (
     <>
       <Banner data={data} />

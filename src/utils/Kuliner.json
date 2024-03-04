@@ -80,10 +80,10 @@
         "deskripsi": "Gulai ayam merupakan menu favorit di rumah makan Padang. Daging ayam yang empuk dengan bumbu gulai meresap enak dimakan dengan nasi. Ini resep membuatnya. Selain rendang, masakan Minang di rumah makan Padang sangat beragam. Untuk olahan ayam, gulai ayam jadi favorit banyak orang. Potongan ayam direndam kuah santan berempah memang sangat lezat. Gulai adalah masakan Minang berbahan baku ayam atau daging atau ikan. Kemudian dimasak dengan aneka rempah dan santan kelapa segar.",
         "imageUrl": "https://firebasestorage.googleapis.com/v0/b/pariwisata-d318c.appspot.com/o/gulai.jpeg?alt=media&token=094ed131-3ea7-423c-91ff-fe07f99eff4d",
         "ulasan": {
-            "luarBiasa": 37,
-            "sangatBagus": 20,
-            "biasa": 23,
-            "buruk": 15,
+            "luarBiasa": 40,
+            "sangatBagus": 32,
+            "biasa": 15,
+            "buruk": 20,
             "sangatBuruk": 5
         },
         
@@ -97,7 +97,7 @@
             {
             "nama": "Anonymous",
             "fotoProfil": "https://firebasestorage.googleapis.com/v0/b/pariwisata-d318c.appspot.com/o/Profile.svg?alt=media&token=4b711a9c-828f-4c39-8ccb-4fa9326f6ad7",
-            "rating": 4,
+            "rating": 2,
             "komen": "Saya baru saja mencoba gulai ayam di restoran ini, namun saya merasa sedikit kecewa. Daging ayamnya terlalu keras dan kuah gulainya terlalu kental. Mungkin restoran ini perlu memperbaiki kualitas masakannya."
         },
             {
@@ -121,11 +121,11 @@
         "deskripsi": "Dendeng balado adalah masakan khas Sumatera Barat dibuat dari irisan tipis dan lebar daging sapi yang awalnya direbus terlebih dahulu, dijemur hingga kering, dan akan digoreng hingga garing.",
         "imageUrl": "https://firebasestorage.googleapis.com/v0/b/pariwisata-d318c.appspot.com/o/DendengBalado.webp?alt=media&token=fa0fba48-0ab2-4838-86c4-4c9261481010",
         "ulasan": {
-            "luarBiasa": 37,
-            "sangatBagus": 20,
-            "biasa": 23,
-            "buruk": 15,
-            "sangatBuruk": 5
+            "luarBiasa": 50,
+            "sangatBagus": 30,
+            "biasa": 20,
+            "buruk": 5,
+            "sangatBuruk": 15
         },
         "restaurantImage":"https://firebasestorage.googleapis.com/v0/b/pariwisata-d318c.appspot.com/o/RmPauhPiaman.jpg?alt=media&token=1d0b2834-97b0-475e-9816-3055e267b6a0",
         "gallery": [
@@ -160,10 +160,10 @@
         "deskripsi": "Lamang tapai adalah makanan ringan yang berasal dari Sumatera Barat, Indonesia. Rasanya manis, enak dan ada sedikit rasa fermentasi di dalamnya. Biasanya lamang tapai banyak dijumpai pada Idul Fitri, pernikahan, pesta adat atau acara khitanan.",
         "imageUrl": "https://firebasestorage.googleapis.com/v0/b/pariwisata-d318c.appspot.com/o/LamangTapai2.jpg?alt=media&token=f2ba1e91-05e1-431e-a567-5a3b8f1a81a0",
         "ulasan": {
-            "luarBiasa": 37,
-            "sangatBagus": 20,
-            "biasa": 23,
-            "buruk": 15,
+            "luarBiasa": 47,
+            "sangatBagus": 25,
+            "biasa": 20,
+            "buruk": 16,
             "sangatBuruk": 5
         },
         "restaurantImage":"https://firebasestorage.googleapis.com/v0/b/pariwisata-d318c.appspot.com/o/RMPicalSikai.webp?alt=media&token=9c20871f-1a80-40e2-bed2-f4cb84491429",

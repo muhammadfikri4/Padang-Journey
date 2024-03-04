@@ -4,8 +4,10 @@ import withMT from "@material-tailwind/react/utils/withMT";
 export default withMT({
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    screens: {
-      desktop: { min: "481px" },
+    extend: {
+      screens: {
+        xs: "425px",
+      },
     },
   },
   plugins: [require("daisyui")],

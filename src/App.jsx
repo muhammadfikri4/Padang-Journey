@@ -7,6 +7,7 @@ import DetailWisata from "./components/Pages/DetailWisata";
 import NotFound from "./components/Fragments/NotFound";
 import Kuliner from "./components/Pages/Kuliner";
 import DetailKuliner from "./components/Pages/DetailKuliner";
+import Favorit from "./components/Pages/Favorit";
 
 function App() {
   const [navActive, setNavActive] = useState(false);
@@ -25,7 +26,7 @@ function App() {
           <Route path="/wisata/:id" element={<DetailWisata />} />
           <Route path="/kuliner" element={<Kuliner />} />
           <Route path="/kuliner/:id" element={<DetailKuliner />} />
-          <Route path="/favorit" element={<Kuliner />} />
+          <Route path="/favorit" element={<Favorit />} />
           <Route path="/tentang" element={<Kuliner />} />
           <Route
             path="*"

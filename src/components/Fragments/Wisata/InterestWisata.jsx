@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const InterestWisata = ({ wisata }) => {
   return (
     <>
-      <div className="container grid sm:grid-cols-2 sm:grid-rows-1 grid-cols-1 grid-rows-2 py-10 sm:gap-0 gap-0">
+      <div className="container grid sm:grid-cols-2 sm:grid-rows-1 grid-cols-1 grid-rows-2 py-10 sm:gap-0 gap-2">
         <motion.div
           initial={{ x: -100 }}
           whileInView={{ x: 0 }}

@@ -37,7 +37,12 @@ const Banner = () => {
             menawarkan hidangan-hidangan yang menggugah selera dan unik.
           </motion.p>
         </div>
-        <div className=" sm:order-2 order-1">
+        <motion.div
+          initial={{ x: 150 }}
+          whileInView={{ x: 0 }}
+          transition={{ duration: 0.5 }}
+          className=" sm:order-2 order-1"
+        >
           <img
             src={
               "https://firebasestorage.googleapis.com/v0/b/pariwisata-d318c.appspot.com/o/SatePadang.webp?alt=media&token=776b9266-f687-4d78-bf1e-703f0cd51979"
@@ -50,7 +55,7 @@ const Banner = () => {
               isRender && "hidden duration-200"
             } bg-gray-300 sm:w-full sm:h-screen w-screen h-[50vh] absolute top-0`}
           ></div>
-        </div>
+        </motion.div>
       </div>
     </>
   );

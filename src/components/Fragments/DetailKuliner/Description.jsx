@@ -20,15 +20,15 @@ const Description = ({ data, kuliner }) => {
       >
         <h1 className="font-[Montserrat] text-2xl text-center">Deskripsi</h1>
         <p className="font-[Metropolis]">{data.deskripsi}</p>
-        {/* <div className="w-max">
+        <div className="w-max">
           <LikeButton
             setIsLiked={setIsLiked}
             data={data}
             checkLiked={checkLiked}
-            bg={"#fce1e1"}
+            bg={"#b8ff68"}
             bot={true}
           />
-        </div> */}
+        </div>
       </motion.div>
       <div className="flex justify-center">
         <motion.img

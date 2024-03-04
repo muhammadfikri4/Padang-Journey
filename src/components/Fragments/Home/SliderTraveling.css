@@ -1,0 +1,63 @@
+.traveling .hero-slider {
+    background-image: url("https://cdn.goturkiye.com/goturkiye/bg-1.jpg");
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+  }
+  
+  .traveling .hero-slider::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(
+      262deg,
+      rgba(0, 0, 0, 0) 10%,
+      rgba(0, 0, 0, 1) 80%
+    );
+    pointer-events: none;
+  }
+  .traveling .hero-slider::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    background-color: rgba(0, 0, 0, 0.25);
+  }
+  .traveling .hero-slider.slider-ready {
+    margin-right: 0 !important;
+    border-radius: 0 !important;
+  }
+  .traveling .hero-slider.slider-ready .caption-slider {
+    opacity: 0;
+    z-index: 0;
+  }
+  .traveling .slider-ready .header-slider {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  .traveling .slider-ready .slider {
+    right: 0;
+  }
+  .traveling .slider-container .btn-slider {
+    top: 0;
+    width: 3.5rem;
+    color: #fff;
+    font-weight: 800;
+    font-size: 1.8rem;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    height: 100%;
+    z-index: 30;
+    position: absolute;
+  }
+  .traveling .slick-disabled {
+    display: none;
+  }
+  

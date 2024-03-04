@@ -7,7 +7,7 @@ import PadangJourney from "../../assets/Icons/PadangJourneyWhite.svg";
 const Footer = () => {
   return (
     <div className="grid grid-cols-2 px-5 py-7 bg-[#b8ff68]">
-      <div className="sm:w-96 w-[85%] sm:px-10 px-2">
+      <div className="sm:w-96 w-[100%] sm:px-10 px-2">
         {/* <h1 className="font-[Montserrat] text-3xl pb-3">Padang Journey</h1> */}
         <img src={PadangJourney} alt="logo" className="w-20 h-20 pb-3" />
         <p className="text-sm">

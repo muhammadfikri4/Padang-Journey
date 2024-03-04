@@ -17,10 +17,10 @@ const Navbar = ({ navActive, setNavActive }) => {
   const location = useLocation();
 
   const listenScrollEvent = (event) => {
-    if (window.scrollY < 530) {
-      return setIsScroll(false);
-    } else if (window.scrollY > 530) {
+    if (window.scrollY > 0) {
       return setIsScroll(true);
+    } else {
+      return setIsScroll(false);
     }
   };
   useEffect(() => {
@@ -31,10 +31,10 @@ const Navbar = ({ navActive, setNavActive }) => {
   return (
     <>
       <nav
-        className={`fixed flex items-center justify-between -top-1 right-0 left-0 py-7 px-7 z-10 ${
+        className={`fixed duration-300 flex items-center justify-between -top-1 right-0 left-0 px-7 z-[99] ${
           isScroll || active
-            ? "shadow-[0_-4px_15px_0_rgba(0,0,0,0.75)]"
-            : `shadow-none`
+            ? "shadow-[0_-4px_15px_0_rgba(0,0,0,0.75)] py-5"
+            : `shadow-none py-7`
         } `}
         style={{
           backgroundColor:
@@ -44,7 +44,7 @@ const Navbar = ({ navActive, setNavActive }) => {
               (location.pathname == "/wisata" ||
                 location.pathname == "/kuliner"))
               ? "white"
-              : `rgba(0,0,0,.3)`,
+              : `rgba(0,0,0,.1)`,
         }}
       >
         {/* <div className="flex justify-between items-center">
@@ -158,7 +158,7 @@ const Navbar = ({ navActive, setNavActive }) => {
       <div
         className={`fixed ${
           active ? "translate-y-0" : "-translate-y-[1000px]"
-        } duration-300 z-[9] sm:hidden flex flex-col top-0 right-0 left-0 bottom-0 py-5 justify-center gap-12 list-none bg-white font-[Metropolis]`}
+        } duration-300 z-[98] sm:hidden flex flex-col top-0 right-0 left-0 bottom-0 py-32 gap-8 list-none bg-white font-[Metropolis]`}
       >
         <Link to={`/`} onClick={() => setActive(!active)}>
           <p className="hover:bg-gray-100 px-5 py-3">Beranda</p>
