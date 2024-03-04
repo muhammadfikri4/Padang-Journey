@@ -16,7 +16,7 @@ const Layout = ({ data }) => {
     window.scrollTo(0, 0);
   }, [data]);
   return (
-    <>
+    <div className="overflow-x-hidden">
       <Banner data={data} />
       <Title data={data} />
       <div className="flex justify-center">
@@ -34,7 +34,7 @@ const Layout = ({ data }) => {
         <Galery data={data} />
       </div>
       <OtherWisataList wisata={wisata} />
-    </>
+    </div>
   );
 };
 

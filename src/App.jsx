@@ -28,7 +28,6 @@ function App() {
           <Route path="/kuliner" element={<Kuliner />} />
           <Route path="/kuliner/:id" element={<DetailKuliner />} />
           <Route path="/favorit" element={<Favorit />} />
-          <Route path="/tentang" element={<About />} />
           <Route
             path="*"
             element={

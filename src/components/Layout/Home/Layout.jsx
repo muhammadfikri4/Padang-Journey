@@ -10,7 +10,7 @@ import Maps from "../../Fragments/Home/Maps";
 
 const Layout = () => {
   return (
-    <>
+    <div className="overflow-x-hidden">
       <VideoPlayer />
       <AboutPadang />
       <SliderDestination />
@@ -18,7 +18,7 @@ const Layout = () => {
       <SliderTraveling />
       <Maps />
       <Footer />
-    </>
+    </div>
   );
 };
 

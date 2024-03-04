@@ -36,7 +36,7 @@ const Layout = () => {
     setDatas([...wisata, ...kuliner]);
   }, [wisata, kuliner]);
   return (
-    <>
+    <div className="overflow-x-hidden">
       <Banner />
       {datas.length > 0 ? (
         <FavoritList
@@ -52,7 +52,7 @@ const Layout = () => {
           </p>
         </div>
       )}
-    </>
+    </div>
   );
 };
 

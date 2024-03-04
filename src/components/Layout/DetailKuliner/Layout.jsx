@@ -15,7 +15,7 @@ const Layout = ({ data }) => {
     window.scrollTo(0, 0);
   }, [data]);
   return (
-    <>
+    <div className="overflow-x-hidden">
       <Banner data={data} />
       <Title data={data} />
 
@@ -38,7 +38,7 @@ const Layout = ({ data }) => {
         </div>
       </div>
       <Footer />
-    </>
+    </div>
   );
 };
 
