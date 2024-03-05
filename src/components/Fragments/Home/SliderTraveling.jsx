@@ -249,29 +249,28 @@ export default function SliderTraveling() {
                             {item.nama}
                           </p>
                         </div>
-                        <div
-                          className="absolute top-4 right-4"
-                          onClick={() =>
-                            (() => {
-                              LikeKuliner({ data: item, setIsLiked });
-                              setLiked(
-                                JSON.parse(
-                                  localStorage.getItem("like-kuliner")
-                                ) || []
-                              );
-                            })()
-                          }
-                        >
-                          <div className="bg-white p-2 rounded-xl cursor-pointer">
-                            {checkLiked(item.id) ? (
-                              <IoMdHeart className="text-black text-2xl" />
-                            ) : (
-                              <IoMdHeartEmpty className="text-black text-2xl" />
-                            )}
-                          </div>
-                        </div>
                       </div>
                     </Link>
+                    <div
+                      className="absolute top-4 right-4"
+                      onClick={() =>
+                        (() => {
+                          LikeKuliner({ data: item, setIsLiked });
+                          setLiked(
+                            JSON.parse(localStorage.getItem("like-kuliner")) ||
+                              []
+                          );
+                        })()
+                      }
+                    >
+                      <div className="bg-white p-2 rounded-xl cursor-pointer">
+                        {checkLiked(item.id) ? (
+                          <IoMdHeart className="text-black text-2xl" />
+                        ) : (
+                          <IoMdHeartEmpty className="text-black text-2xl" />
+                        )}
+                      </div>
+                    </div>
                   </div>
                 ))}
               </div>
