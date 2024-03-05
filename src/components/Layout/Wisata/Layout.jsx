@@ -25,7 +25,7 @@ const Layout = () => {
 
   return (
     <>
-      <div className={`${findActive && "hidden"}`}>
+      <div className={`${findActive && "hidden"} overflow-x-hidden`}>
         <Banner />
 
         <div className="flex justify-center py-10">

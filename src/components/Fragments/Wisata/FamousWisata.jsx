@@ -4,6 +4,7 @@ import { IoMdHeartEmpty } from "react-icons/io";
 import { IoMdHeart } from "react-icons/io";
 import { Like, findLike } from "../../../utils/Function/Like";
 import LikeButton from "./LikeButton";
+import { Link } from "react-router-dom";
 
 const FamousWisata = ({ wisata }) => {
   const [isLiked, setIsLiked] = useState(false);
@@ -26,7 +27,7 @@ const FamousWisata = ({ wisata }) => {
           initial={{ opacity: 0, x: -100 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5 }}
-          className="font-[MetropolisBold] text-xl sm:text-3xl sm:text-right text-left"
+          className="font-[MetropolisBold] text-xl sm:text-3xl sm:text-right text-left overflow-x-hidden"
         >
           Wisata Terkenal Padang.
         </motion.h1>
@@ -36,11 +37,13 @@ const FamousWisata = ({ wisata }) => {
           transition={{ duration: 0.2 }}
           className="rounded-xl overflow-hidden"
         >
-          <img
-            className="w-full h-full object-cover hover:scale-110 duration-300"
-            src={wisata[0].imageUrl}
-            alt="image"
-          />
+          <Link to={`/wisata/${wisata[0].id}`}>
+            <img
+              className="w-full h-full object-cover hover:scale-110 duration-300"
+              src={wisata[0].imageUrl}
+              alt="image"
+            />
+          </Link>
           <div
             className="absolute -top-1 -right-1 "
             onClick={() =>
@@ -70,13 +73,15 @@ const FamousWisata = ({ wisata }) => {
             initial={{ opacity: 0, transform: "scale(0)" }}
             whileInView={{ opacity: 1, transform: "scale(1)" }}
             transition={{ duration: `0.${index + 3}` }}
-            className="rounded-xl overflow-hidden"
+            className="rounded-xl overflow-hidden relative"
           >
-            <img
-              className="w-full h-full object-cover hover:scale-110 duration-300"
-              src={item.imageUrl}
-              alt={item.nama}
-            />
+            <Link to={`/wisata/${item.id}`}>
+              <img
+                className="w-full h-full object-cover hover:scale-110 duration-300"
+                src={item.imageUrl}
+                alt={item.nama}
+              />
+            </Link>
             <div
               className="absolute -top-1 -right-1 "
               onClick={() =>
@@ -100,13 +105,15 @@ const FamousWisata = ({ wisata }) => {
           initial={{ opacity: 0, transform: "scale(0)" }}
           whileInView={{ opacity: 1, transform: "scale(1)" }}
           transition={{ duration: 0.5 }}
-          className="rounded-xl overflow-hidden"
+          className="rounded-xl overflow-hidden relative"
         >
-          <img
-            className="w-full h-full object-cover hover:scale-110 duration-300"
-            src={wisata[2].imageUrl}
-            alt={wisata[2].nama}
-          />
+          <Link to={`/wisata/${wisata[2].id}`}>
+            <img
+              className="w-full h-full object-cover hover:scale-110 duration-300"
+              src={wisata[2].imageUrl}
+              alt={wisata[2].nama}
+            />
+          </Link>
           <div
             className="absolute top-0 right-0 "
             onClick={() =>
@@ -127,7 +134,7 @@ const FamousWisata = ({ wisata }) => {
           initial={{ opacity: 0, x: 100 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5 }}
-          className="font-[MetropolisBold] sm:text-3xl text-xl sm:text-left text-right"
+          className="font-[MetropolisBold] sm:text-2xl text-xl sm:text-left text-right text-wrap overflow-x-hidden"
         >
           Nikmati Petualangan
         </motion.h1>

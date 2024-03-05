@@ -192,7 +192,9 @@ export default function SliderDestination() {
 
   return (
     <div className="destination bg-black flex py-10 justify-center overflow-hidden items-center">
-      <div className="relative h-full w-full bg-fixed bg-cover bg-bottom transition-all ease-in-out duration-500 ms-8 sm:ms-16 hero-slider">
+      <div
+        className={`relative h-full w-full bg-fixed bg-cover bg-bottom transition-all ease-in-out duration-500 ms-8 sm:ms-16 hero-slider`}
+      >
         <div className="w-[45%] ps-6 lg:ps-16 delay-100 duration-700 z-30 absolute h-full caption-slider flex flex-col justify-center">
           <div>
             <h1 className="font-[Montserrat] text-2xl md:text-4xl lg:text-5xl text-white font-bold">

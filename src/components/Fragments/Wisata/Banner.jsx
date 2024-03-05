@@ -22,24 +22,22 @@ const Banner = () => {
           loop={true}
           autoplay={true}
           autoplayDelay={5000}
-          navigation={false}
+          navigation={() => false}
         >
-          {wisata.slice(2, 5).map((item) => (
-            <>
-              <div className="flex w-full h-full gap-1">
-                <img
-                  src={item.imageUrl}
-                  alt="image 1"
-                  className="h-full w-full object-cover"
-                />
-              </div>
-            </>
+          {wisata.slice(2, 5).map((item, i) => (
+            <div className="flex w-full h-full gap-1" key={i}>
+              <img
+                src={item.imageUrl}
+                alt="image 1"
+                className="h-full w-full object-cover"
+              />
+            </div>
           ))}
         </Carousel>
       </div>
       <div className="w-screen h-screen sm:hidden carousel flex">
-        {wisata.slice(2, 5).map((item) => (
-          <div className="carousel-item w-full h-full">
+        {wisata.slice(2, 5).map((item, i) => (
+          <div className="carousel-item w-full h-full" key={i}>
             <img
               src={item.imageUrl}
               className="w-full object-cover"

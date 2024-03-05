@@ -11,17 +11,24 @@ const TestimoniCard = ({ data, index }) => {
         transition={{ duration: `0.${index + 2}` }}
         className="flex gap-10"
       >
-        <div className="flex flex-col justify-center items-center gap-2">
+        <div className="md:flex hidden flex-col justify-center items-center gap-2 w-max">
           <img
             src={data.fotoProfil}
             alt={data.nama}
-            className="w-10 h-10 object-cover rounded-full"
+            className="md:inline-block hidden object-cover rounded-full md:w-[80px] w-10 "
           />
 
-          <p className="font-[Metropolis] text-sm">{data.nama}</p>
+          <p className="lg:opacity-1 opacity-0 font-[Metropolis] text-sm">
+            {data.nama}
+          </p>
         </div>
         <div>
-          <div className="flex gap-2">
+          <div className="flex items-center gap-2">
+            <img
+              src={data.fotoProfil}
+              alt={data.nama}
+              className="md:hidden inline-block w-8 h-8 object-cover rounded-full"
+            />
             <div className="flex">
               {(() => {
                 const items = [];

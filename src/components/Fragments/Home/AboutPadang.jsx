@@ -57,7 +57,7 @@ const AboutPadang = () => {
           transition={{ duration: 0.4 }}
           className="flex flex-col gap-2 lg:gap-7 lg:text-base text-sm py-5 flex-1"
         >
-          <p className="leading-7">
+          <p className="leading-7 font-[Metropolis]">
             Kota Padang memiliki keindahan alam yang menarik, seperti pantai dan
             gunung yang mempesona. Beberapa tempat wisata populer di kota ini
             antara lain Pantai Padang, Pantai Air Manis, Bukit Tinggi, Danau

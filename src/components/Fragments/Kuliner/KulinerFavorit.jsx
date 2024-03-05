@@ -8,7 +8,7 @@ import CardFavorit from "./CardFavorit";
 const KulinerFavorit = ({ kuliner, checkLiked, setIsLiked, setLiked }) => {
   return (
     <>
-      <div className="py-20">
+      <div className="py-20 px-3">
         <motion.h1
           initial={{ opacity: 0, x: 150 }}
           whileInView={{ opacity: 1, x: 0 }}

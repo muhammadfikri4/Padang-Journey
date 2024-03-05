@@ -1,15 +1,22 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import LikeButton from "../Kuliner/LikeButton";
+import { LikeKuliner } from "../../../utils/Function/Like";
 
 const Description = ({ data, kuliner }) => {
-  const [isLiked, setIsLiked] = useState(false);
   //   const [datas, setDatas] = useState(kuliner);
-  const liked = JSON.parse(localStorage.getItem("like-kuliner")) || [];
+  const [isLiked, setIsLiked] = useState(false);
+
+  const [liked, setLiked] = useState(
+    JSON.parse(localStorage.getItem("like-kuliner")) || []
+  );
   const checkLiked = (id) => {
     const result = liked.find((item) => item.id == id);
     return result;
   };
+  useEffect(() => {
+    setLiked(JSON.parse(localStorage.getItem("like-kuliner")) || []);
+  }, [isLiked]);
   return (
     <>
       <motion.div
@@ -20,7 +27,13 @@ const Description = ({ data, kuliner }) => {
       >
         <h1 className="font-[Montserrat] text-2xl text-center">Deskripsi</h1>
         <p className="font-[Metropolis]">{data.deskripsi}</p>
-        <div className="w-max">
+        <div
+          className="w-max"
+          onClick={() => {
+            LikeKuliner({ data, setIsLiked });
+            setLiked(JSON.parse(localStorage.getItem("like-kuliner")) || []);
+          }}
+        >
           <LikeButton
             setIsLiked={setIsLiked}
             data={data}

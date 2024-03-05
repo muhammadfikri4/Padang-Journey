@@ -191,17 +191,18 @@ export default function SliderTraveling() {
 
   return (
     <div className="traveling bg-black flex py-10 justify-center overflow-hidden items-center">
-      <div className="relative h-full w-full bg-fixed bg-cover bg-bottom transition-all ease-in-out duration-500 me-8 sm:me-16 hero-slider">
+      <div
+        className={`relative h-full w-full bg-fixed bg-cover bg-bottom transition-all ease-in-out duration-500 me-8 sm:me-16 hero-slider bg-[url('${kuliner[2].imageUrl}')]`}
+      >
         <div className="w-[45%] right-0 pe-6 lg:pe-16 delay-100 duration-700 z-30 absolute h-full caption-slider flex flex-col items-end justify-center">
           <div className="text-right">
             <h1 className="font-[Montserrat] text-2xl md:text-4xl lg:text-5xl text-white font-bold">
               Kuliner
             </h1>
-            <Link
-              to={"/kuliner"}
-              className="font-[Metropolis] text-[10px] md:text-sm lg:text-base text-white border border-white py-2 px-4 rounded mt-4 hover:bg-white hover:text-black"
-            >
-              Jelajahi
+            <Link to="/kuliner">
+              <button className="font-[Metropolis] text-[10px] md:text-sm lg:text-base text-white border border-white py-2 px-4 rounded mt-4 hover:bg-white hover:text-black">
+                Jelajahi
+              </button>
             </Link>
           </div>
         </div>

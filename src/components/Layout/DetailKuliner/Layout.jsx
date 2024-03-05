@@ -10,6 +10,7 @@ import Galery from "../../Fragments/DetailKuliner/Gallery";
 import Testimoni from "../../Fragments/DetailKuliner/Testimoni";
 import kuliner from "../../../utils/Kuliner.json";
 import Review from "../../Fragments/DetailKuliner/Review";
+import OtherKuliner from "../../Fragments/DetailKuliner/OtherKuliner";
 const Layout = ({ data }) => {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -32,10 +33,11 @@ const Layout = ({ data }) => {
           <Testimoni data={data} />
         </div>
 
-        <div className="flex lg:flex-row flex-col-reverse justify-center gap-20 py-10 items-center sm:px-5 px-3">
+        <div className="flex lg:flex-row flex-col-reverse justify-center sm:gap-20 gap-3 py-10 items-center sm:px-5 px-3">
           <Review data={data} />
           <Galery data={data} />
         </div>
+        <OtherKuliner kuliner={kuliner} />
       </div>
       <Footer />
     </div>

@@ -3,9 +3,11 @@ import { IoLocationOutline } from "react-icons/io5";
 
 const Location = ({ location }) => {
   return (
-    <div className="sm:w-72 sm:h-12 w-full h-12 bg-[rgba(0,0,0,.3)] flex items-center justify-start gap-8 px-5 sm:py-8 py-3 rounded-xl backdrop-blur-[2px]">
-      <IoLocationOutline className="text-[rgba(255,255,255,.8)] text-3xl" />
-      <p className="text-white text-base font-[Montserrat]">{location}</p>
+    <div className="bg-[rgba(0,0,0,.3)] flex items-center justify-center gap-8 p-3 px-7 rounded-xl backdrop-blur-[2px]">
+      <IoLocationOutline className="text-[rgba(255,255,255,.8)] text-xl" />
+      <p className="text-white lg:text-base md:text-[11px] text-sm font-[Montserrat]">
+        {location}
+      </p>
     </div>
   );
 };

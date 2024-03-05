@@ -4,7 +4,7 @@ import CardBenefit from "./CardBenefit";
 const Benefit = () => {
   return (
     <>
-      <div className="mb-10">
+      <div className="mb-10 overflow-x-hidden">
         <h1 className="text-center font-[MetropolisBold] text-3xl">
           Keuntungan Berwisata Di Padang
         </h1>
