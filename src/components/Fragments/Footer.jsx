@@ -22,7 +22,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="flex flex-col items-center gap-5 font-[MetropolisBold]">
-        <Link to={"/beranda"}>Beranda</Link>
+        <Link to={"/"}>Beranda</Link>
         <Link to={"/wisata"}>Wisata</Link>
         <Link to={"/kuliner"}>Kuliner</Link>
         <Link to={"/favorit"}>Favorit</Link>
