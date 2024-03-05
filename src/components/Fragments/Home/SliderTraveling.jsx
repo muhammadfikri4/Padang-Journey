@@ -237,47 +237,41 @@ export default function SliderTraveling() {
               <div className="flex flex-row-reverse absolute right-0 items-stretch gap-3 min-w-max h-full slider-track">
                 {kuliner.slice(0, 4).map((item, i) => (
                   <div className="card-slider relative overflow-hidden" key={i}>
-                    <div className="bg-white h-full rounded-[50px] cursor-pointer overflow-hidden relative">
-                      <img
-                        className="w-full h-full object-cover"
-                        src={item.imageUrl}
-                        alt={item.nama}
-                      />
-                      <div className="absolute bottom-5 left-6 right-6">
-                        <p className="sm:text-xl text-white font-bold">
-                          {item.nama}
-                        </p>
-                      </div>
-                      <div
-                        className="absolute top-4 right-4"
-                        onClick={() =>
-                          (() => {
-                            LikeKuliner({ data: item, setIsLiked });
-                            setLiked(
-                              JSON.parse(
-                                localStorage.getItem("like-kuliner")
-                              ) || []
-                            );
-                          })()
-                        }
-                      >
-                        {/* <LikeButton
-                        data={item}
-                        setIsLiked={setIsLiked}
-                        checkLiked={checkLiked}
-                      /> */}
+                    <Link to={`/kuliner/${item.id}`}>
+                      <div className="bg-white h-full rounded-[50px] cursor-pointer overflow-hidden relative">
+                        <img
+                          className="w-full h-full object-cover"
+                          src={item.imageUrl}
+                          alt={item.nama}
+                        />
+                        <div className="absolute bottom-5 left-6 right-6">
+                          <p className="sm:text-xl text-white font-bold">
+                            {item.nama}
+                          </p>
+                        </div>
                         <div
-                          className="bg-white p-2 rounded-xl cursor-pointer"
-                          // onClick={() => Like({ data, setIsLiked })}
+                          className="absolute top-4 right-4"
+                          onClick={() =>
+                            (() => {
+                              LikeKuliner({ data: item, setIsLiked });
+                              setLiked(
+                                JSON.parse(
+                                  localStorage.getItem("like-kuliner")
+                                ) || []
+                              );
+                            })()
+                          }
                         >
-                          {checkLiked(item.id) ? (
-                            <IoMdHeart className="text-black text-2xl" />
-                          ) : (
-                            <IoMdHeartEmpty className="text-black text-2xl" />
-                          )}
+                          <div className="bg-white p-2 rounded-xl cursor-pointer">
+                            {checkLiked(item.id) ? (
+                              <IoMdHeart className="text-black text-2xl" />
+                            ) : (
+                              <IoMdHeartEmpty className="text-black text-2xl" />
+                            )}
+                          </div>
                         </div>
                       </div>
-                    </div>
+                    </Link>
                   </div>
                 ))}
               </div>
