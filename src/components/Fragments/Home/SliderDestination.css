@@ -19,7 +19,7 @@
     pointer-events: none;
     border-top-left-radius: 100px;
     border-bottom-left-radius: 100px;
-    
+    transition: .5s;
   }
   .destination .slider-ready.hero-slider::before {
     border-radius: 0 !important;
@@ -37,6 +37,7 @@
     background-color: rgba(0, 0, 0, 0.25);
     border-top-left-radius: 100px;
     border-bottom-left-radius: 100px;
+    transition: .5s;
   }
   .destination .hero-slider.slider-ready {
     margin-left: 0 !important;
